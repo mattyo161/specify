@@ -1,0 +1,26 @@
+
+<% fields = %w(codeMeaning codeValue codingSchemeDesignator) %>
+<% checkbox_code = '<input type="checkbox" class="askIfPresent"' + (allowed_term.non_quantifiables.blank? ? '' : 'checked="checked" id="allowedTermNonQuant' + allowed_term.non_quantifiables[0].id.to_s + '"') + '/>' %>
+<% quant_not_defined_code = "<img src='/images/icons_transparent/Add_transparent16x16.png' class='addQuantification' title='Add Quantification'/>" %>
+<tr id='allowedTerm<%= allowed_term.id.to_s %>' class='allowed_terms' name='element' style='height:20px'>
+  <%#= wrapper(allowed_term, fields, 'td') %>
+  <td class='codeMeaning editableText' title='<%= allowed_term.codeMeaning %>'><%= allowed_term.codeMeaning %></td>
+  <td class='codeValue editableText' title='<%= allowed_term.codeValue %>'><%= allowed_term.codeValue %></td>
+  <td class='codingSchemeDesignator editableText' title='<%= allowed_term.codingSchemeDesignator %>'><%= allowed_term.codingSchemeDesignator %></td>
+  <!--
+  <td class='codingSchemeVersion editableText' title='<%= allowed_term.codingSchemeVersion %>'><%= allowed_term.codingSchemeVersion %></td>
+  -->
+  <% component_type = allowed_term.component.component_type.to_s if !allowed_term.component.blank? %>
+  <% if component_type.blank? || (!component_type.blank? && !(component_type == 'inference' || component_type == 'calculation')) %>
+  <td>
+    <%= render :partial => '/characteristic_quantifications/characteristic_quantification', :collection => allowed_term.characteristic_quantification.to_a if (component_term.blank? && allowed_term.characteristic_quantification.to_a.any?) %>
+    <%= checkbox_code if !component_term.blank? %>
+    <%= quant_not_defined_code if component_term.blank? && allowed_term.characteristic_quantification.blank? %>
+  </td>
+  <% end %>
+</tr>
+
+<% # quant_defined_code = "<img src='/images/icons_transparent/Edit.png' class='editQuantification' title='Edit Quantification'/>"
+%>
+    <% # = quant_defined_code if component_term == nil && allowed_term.characteristic_quantifications.any?
+    %>

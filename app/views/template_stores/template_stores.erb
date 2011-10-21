@@ -1,0 +1,9 @@
+<h1>your template stores</h1>
+<table cellpadding="3">
+<tr>
+<th align="left">ID</th><!--<th>user</th>--><th align="left">text</th>
+</tr>
+<% #if @template_stores; @template_stores.length ; else ; '-1' ; end 
+%>
+<%= render :partial => '/template_stores/template_store', :collection => @template_stores %>
+</table>

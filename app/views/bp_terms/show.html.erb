@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @bp_term.name %>
+</p>
+
+<p>
+  <b>Bpid:</b>
+  <%=h @bp_term.bpid %>
+</p>
+
+<p>
+  <b>Bp ontology:</b>
+  <%=h @bp_term.bp_ontology_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_bp_term_path(@bp_term) %> |
+<%= link_to 'Back', bp_terms_path %>

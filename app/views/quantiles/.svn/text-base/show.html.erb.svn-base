@@ -1,0 +1,13 @@
+<p>
+  <b>Bin:</b>
+  <%=h @quantile.bin %>
+</p>
+
+<p>
+  <b>Characteristic quantification:</b>
+  <%=h @quantile.characteristic_quantification_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_quantile_path(@quantile) %> |
+<%= link_to 'Back', quantiles_path %>

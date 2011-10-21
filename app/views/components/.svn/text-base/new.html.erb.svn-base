@@ -1,0 +1,40 @@
+<h1>New component</h1>
+<% form_for(@component) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :label %><br />
+    <%= f.text_field :label %>
+  </p>
+  <p>
+    <%= f.label :minCardinality %><br />
+    <%= f.text_field :minCardinality %>
+  </p>
+  <p>
+    <%= f.label :maxCardinality %><br />
+    <%= f.text_field :maxCardinality %>
+  </p>
+  <p>
+    <%= f.label :itemNumber %><br />
+    <%= f.text_field :itemNumber %>
+  </p>
+  <p>
+    <%= f.label :shouldDisplay %><br />
+    <%= f.check_box :shouldDisplay %>
+  </p>
+  <p>
+    <%= f.label :explanatoryText %><br />
+    <%= f.text_field :explanatoryText %>
+  </p>
+  <p>
+    <%= f.label :authors %><br />
+    <%= f.text_field :authors %>
+  </p>
+  <p>
+    <%= f.label :aim_template_id %><br />
+    <%= f.text_field :aim_template_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+<%= link_to 'Back', components_path %>

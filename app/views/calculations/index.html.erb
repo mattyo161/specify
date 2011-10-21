@@ -1,0 +1,28 @@
+<h1>Listing calculations</h1>
+
+<table>
+  <tr>
+    <th>Uid</th>
+    <th>Description</th>
+    <th>Mathml</th>
+    <th>Algorithmname</th>
+    <th>Algorithmversion</th>
+  </tr>
+
+<% @calculations.each do |calculation| %>
+  <tr>
+    <td><%=h calculation.uid %></td>
+    <td><%=h calculation.description %></td>
+    <td><%=h calculation.mathML %></td>
+    <td><%=h calculation.algorithmName %></td>
+    <td><%=h calculation.algorithmVersion %></td>
+    <td><%= link_to 'Show', calculation %></td>
+    <td><%= link_to 'Edit', edit_calculation_path(calculation) %></td>
+    <td><%= link_to 'Destroy', calculation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New calculation', new_calculation_path %>

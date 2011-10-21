@@ -1,0 +1,62 @@
+
+#outer-north .topper {
+	display:none;
+}
+#outer-north {
+	height: 70px;
+	background-image: url("../images/qi-bench-header-bg.png");
+	background-repeat: repeat-x;
+	background-color: #a5c5ff !important;
+}
+#outer-north .logo img {
+	display:none;
+}
+#outer-north .logo {
+	height: 70px;
+	width: 150px;
+	background-image: url("../images/qi-bench-header-logo.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+#outer-north .application a b span {
+	color: #333 !important;
+	margin-left: 5px;
+}
+#outer-north .user {
+	margin-left: 30px;
+	color: #666;
+}
+
+#outer-north #header-nav {
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+#outer-north #header-nav a, 
+#outer-north #header-nav a:hover, 
+#outer-north #header-nav a:visited, 
+#outer-north #header-nav a:active 
+{
+	color: blue;
+}
+
+
+#main_div .ui-layout-west .ui-widget-content {
+	background-image: none !important;
+}
+
+#main_div #tabbuttons .logos {
+	float:right;
+	height: 30px;
+}
+
+#main_div #tabbuttons .logos a {
+	background-color: none;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+#main_div #tabbuttons li {
+	padding-bottom: 0;
+}
+

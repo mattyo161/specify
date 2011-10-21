@@ -1,0 +1,395 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate
+END
+20100531091403_create_anatomic_entities.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531091403_create_anatomic_entities.rb
+END
+20101110054935_add_annotator_confidence_to_characteristic_quantifications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101110054935_add_annotator_confidence_to_characteristic_quantifications.rb
+END
+20100516224052_add_login_count_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516224052_add_login_count_to_user.rb
+END
+20100516223549_add_login_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516223549_add_login_to_user.rb
+END
+20100908024610_create_quantiles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100908024610_create_quantiles.rb
+END
+20100531091511_create_imaging_observations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531091511_create_imaging_observations.rb
+END
+20100826054724_add_component_id_to_calculations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100826054724_add_component_id_to_calculations.rb
+END
+20100516224155_add_last_request_at_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516224155_add_last_request_at_to_user.rb
+END
+20100826074551_rename_aim_template_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100826074551_rename_aim_template_id.rb
+END
+20100726064818_create_inferences.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100726064818_create_inferences.rb
+END
+20100601012821_add_user_id_to_template.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100601012821_add_user_id_to_template.rb
+END
+20100725225441_create_non_quantifiables.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100725225441_create_non_quantifiables.rb
+END
+20100726014210_add_anatomic_entity_id_to_allowed_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100726014210_add_anatomic_entity_id_to_allowed_terms.rb
+END
+20100516194610_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516194610_create_users.rb
+END
+20100627190054_create_template_containers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100627190054_create_template_containers.rb
+END
+20100629033910_add_template_container_id_to_aim_template.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100629033910_add_template_container_id_to_aim_template.rb
+END
+20101003205958_create_ordinal_levels.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101003205958_create_ordinal_levels.rb
+END
+20101103050721_add_lexicon_name_to_lexicon_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101103050721_add_lexicon_name_to_lexicon_terms.rb
+END
+20100516224019_add_persistence_token_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516224019_add_persistence_token_to_user.rb
+END
+20100725225513_create_intervals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100725225513_create_intervals.rb
+END
+20100908024635_add_coding_scheme_version_to_allowed_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100908024635_add_coding_scheme_version_to_allowed_terms.rb
+END
+20100531195451_add_imaging_observation_id_to_imaging_observation_characteristic.rb
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531195451_add_imaging_observation_id_to_imaging_observation_characteristic.rb
+END
+20100516224312_add_current_login_ip_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516224312_add_current_login_ip_to_user.rb
+END
+20101013020912_add_first_name_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101013020912_add_first_name_to_users.rb
+END
+20100922051828_add_type_to_components.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100922051828_add_type_to_components.rb
+END
+20100531091527_create_imaging_observation_characteristics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531091527_create_imaging_observation_characteristics.rb
+END
+20100727060057_create_calculations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100727060057_create_calculations.rb
+END
+20101124022001_remove_template_container_id_from_aim_templates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101124022001_remove_template_container_id_from_aim_templates.rb
+END
+20100725222006_create_allowed_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100725222006_create_allowed_terms.rb
+END
+20100826053933_add_component_id_to_allowed_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100826053933_add_component_id_to_allowed_terms.rb
+END
+20100726054459_create_components.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100726054459_create_components.rb
+END
+20100826080332_rename_aim_template_id_in_imaging_observations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100826080332_rename_aim_template_id_in_imaging_observations.rb
+END
+20101110054913_add_max_operator_to_intervals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101110054913_add_max_operator_to_intervals.rb
+END
+20100516224335_add_last_login_ip_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516224335_add_last_login_ip_to_user.rb
+END
+20100626031520_rename_template_ids.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100626031520_rename_template_ids.rb
+END
+20100830020646_create_aim_templates_template_containers_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100830020646_create_aim_templates_template_containers_table.rb
+END
+20100531212017_add_template_id_to_imaging_observation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531212017_add_template_id_to_imaging_observation.rb
+END
+20100725225415_create_characteristic_quantifications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100725225415_create_characteristic_quantifications.rb
+END
+20100516223921_add_crypted_password_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516223921_add_crypted_password_to_user.rb
+END
+20100516224244_add_current_login_at_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516224244_add_current_login_at_to_user.rb
+END
+20100810014240_add_aim_template_id_to_template_stores.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100810014240_add_aim_template_id_to_template_stores.rb
+END
+20100926061745_create_lexicon_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100926061745_create_lexicon_terms.rb
+END
+20100516223949_add_password_salt_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516223949_add_password_salt_to_user.rb
+END
+20101003211227_add_type_to_characteristic_quantifications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101003211227_add_type_to_characteristic_quantifications.rb
+END
+20101101045019_add_code_version_to_lexicon_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101101045019_add_code_version_to_lexicon_terms.rb
+END
+20101013031257_add_allowed_term_id_to_non_quantifiables.rb
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101013031257_add_allowed_term_id_to_non_quantifiables.rb
+END
+20100626022203_rename_templates_aim_templates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100626022203_rename_templates_aim_templates.rb
+END
+20100516224223_add_last_login_at_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100516224223_add_last_login_at_to_user.rb
+END
+20100525023212_create_template_stores.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100525023212_create_template_stores.rb
+END
+20100726012959_add_annotator_confidence_to_anatomic_entities.rb
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100726012959_add_annotator_confidence_to_anatomic_entities.rb
+END
+20101108060438_rename_code_version_in_lexicon_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101108060438_rename_code_version_in_lexicon_terms.rb
+END
+20100810030949_rename_aim_template_id_in_template_stores.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100810030949_rename_aim_template_id_in_template_stores.rb
+END
+20101013020945_add_last_name_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101013020945_add_last_name_to_users.rb
+END
+20100725225525_create_numericals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100725225525_create_numericals.rb
+END
+20101105030306_rename_bin_in_quantiles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101105030306_rename_bin_in_quantiles.rb
+END
+20101013021012_add_email_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101013021012_add_email_to_users.rb
+END
+20100908024315_create_scales.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100908024315_create_scales.rb
+END
+20100729022051_rename_anatomic_entity_id_in_allowed_terms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100729022051_rename_anatomic_entity_id_in_allowed_terms.rb
+END
+20101110054859_add_min_operator_to_intervals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101110054859_add_min_operator_to_intervals.rb
+END
+20100628013813_add_user_id_to_template_container.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100628013813_add_user_id_to_template_container.rb
+END
+20100531195636_add_anatomic_entity_id_to_anatomic_entity_characteristic.rb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531195636_add_anatomic_entity_id_to_anatomic_entity_characteristic.rb
+END
+20100531211401_create_templates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531211401_create_templates.rb
+END
+20100531091428_create_anatomic_entity_characteristics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531091428_create_anatomic_entity_characteristics.rb
+END
+20100531211954_add_template_id_to_anatomic_entity.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20100531211954_add_template_id_to_anatomic_entity.rb
+END
+20101110054822_remove_operator_from_intervals.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/db/migrate/20101110054822_remove_operator_from_intervals.rb
+END

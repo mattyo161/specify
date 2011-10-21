@@ -1,0 +1,2 @@
+module BpTriplesHelper
+end

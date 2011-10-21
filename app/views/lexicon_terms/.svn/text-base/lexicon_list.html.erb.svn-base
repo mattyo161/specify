@@ -1,0 +1,2 @@
+<% lexiconList = '' ; LexiconTerm.all.find_all { |f| f.lexiconName }.map { |lt| lt.lexiconName }.uniq.each { |t| lexiconList += '<p id="' + t + '"><span style="white-space:nowrap">' + t + "</span></p>" } %>
+<%= lexiconList %>

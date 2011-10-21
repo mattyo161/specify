@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/boot.rb
+END
+server.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/server.xml
+END
+service.bat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/service.bat
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/environment.rb
+END
+warble.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/warble.rb
+END

@@ -1,0 +1,26 @@
+<%  # if scale != nil
+%>
+<div class="quant_type4 centertable">
+  <div class='scales' id='scale<%= scale.id.to_s if scale!=nil%>' name='element' <%= 'style="display:none"' if scale == nil %> >
+		<div style="float:right">
+		  <img class="deleteScale" id="deleteScale<%= scale.id.to_s unless scale.blank? %>"  src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete scale" title="Delete scale"/>
+		</div>
+		<table>
+		  <tr>
+			<td style="text-align:left">Description : </td>
+			<td class='description editableText' style="width:50px; border-width:1px; border-style:solid; border-color:#CDCDCD"><%= scale.description if scale!=nil %></td>
+		  </tr>
+		  <tr>
+			<td style="text-align:left">Comment : </td>
+			<td class='comment editableText' style="width:50px; border-width:1px; border-style:solid; border-color:#CDCDCD"><%= scale.comment if scale != nil %></td>
+		  </tr>
+		</table>
+			
+			<%# if scale != nil %>
+			<%#= render :file => 'ordinal_levels/ordinal_levels', :locals => {:ordinal_levels => scale.ordinal_levels} %>
+			<%= render :file => 'ordinal_levels/ordinal_levels', :locals => {:scale => scale} %>
+			<%# end %>
+	</div>
+</div>
+<%  # end
+%>

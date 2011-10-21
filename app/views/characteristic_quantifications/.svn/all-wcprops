@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications/new.html.erb
+END
+update_type.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications/update_type.js.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications/show.html.erb
+END
+delete_quantifiables.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications/delete_quantifiables.js.erb
+END
+_characteristic_quantification.erb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/characteristic_quantifications/_characteristic_quantification.erb
+END

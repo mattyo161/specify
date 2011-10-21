@@ -1,0 +1,32 @@
+<tr>
+<!--
+<td style="padding:4px;">
+  <% # h @template_container.authors
+  %>
+</td>
+<td style="padding:4px;">
+  <% # h @template_container.creationDate.to_s(:long)
+  %>
+</td>
+<td style="padding:4px;">
+  <%= # h @template_container.description
+  %>
+</td>
+<td style="padding:4px;">
+</td>
+<td style="padding:4px;">
+  <%=# h @template_container.name
+  %>
+</td>
+<td style="padding:4px;">
+  <%=# h @template_container.version
+  %>
+</td>
+-->
+    <%= wrapper(@template_container, TemplateContainer.first.attribute_names, 'td') # wrapper([aim_template.name, aim_template.version, aim_template.description, aim_template.authors, aim_template.creationDate], 'td')
+     %>
+</tr>
+<% # link_to 'Edit', edit_template_container_path(@template_container) 
+%> 
+<% # link_to 'Back', template_containers_path 
+%>

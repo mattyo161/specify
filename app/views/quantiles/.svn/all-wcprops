@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/quantiles
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/quantiles/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/quantiles/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/quantiles/new.html.erb
+END
+_quantile.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/quantiles/_quantile.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/quantiles/show.html.erb
+END

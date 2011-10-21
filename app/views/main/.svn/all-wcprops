@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main
+END
+local_search_tab.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/local_search_tab.html.erb
+END
+_data.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/_data.erb
+END
+template_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/template_list.html.erb
+END
+selected_terms_table.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/selected_terms_table.erb
+END
+remote_search_tab.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/remote_search_tab.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/index.html.erb
+END
+about_help_tab.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/about_help_tab.html.erb
+END
+update_attribute.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/update_attribute.js.erb
+END
+main_page.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/main_page.html.erb
+END
+template_group_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/template_group_list.html.erb
+END
+select_template.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/select_template.js.erb
+END
+template_table.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/template_table.html.erb
+END
+add_template.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/add_template.html.erb
+END
+templates_groups_tab.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/templates_groups_tab.html.erb
+END
+select_template_container.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/select_template_container.js.erb
+END
+templates_tab.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/templates_tab.html.erb
+END
+lexicon_tab.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/lexicon_tab.html.erb
+END
+upload.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/upload.js.erb
+END
+_aim_template.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/_aim_template.erb
+END
+template_group_table.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/template_group_table.html.erb
+END
+error.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/main/error.js.erb
+END

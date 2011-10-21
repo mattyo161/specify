@@ -1,0 +1,59 @@
+<% if interval %>
+  <tr class='intervals' id='interval<%= interval.id.to_s %>' name='element'>
+    <td><input type='checkbox'/></td>
+	<td>
+      <select class='minOperator select'>
+        <option value='LessThan' <%= "selected='selected'" if interval.minOperator == 'LessThan'  %> >  <  </option>
+        <option value='LessThanEqual' <%= "selected='selected'" if interval.minOperator == 'LessThanEqual'  %> >  <=  </option>
+        <option value='GreaterThan' <%= "selected='selected'" if interval.minOperator == 'GreaterThan' %> >  >  </option>
+        <option value='GreaterThanEqual' <%= "selected='selected'" if interval.minOperator == 'GreaterThanEqual' %> >  >=  </option>
+		<option value='Equal' <%= "selected='selected'" if interval.minOperator == 'Equal' %> >  ==  </option>
+		<option value='NotEqual' <%= "selected='selected'" if interval.minOperator == 'NotEqual' %> >  !=  </option>
+      </select>
+    </td>
+	<td class='minValue editableText' ><%= interval.minValue.to_s %></td>
+	<td>
+      <select class='maxOperator select'>
+        <option value='LessThan' <%= "selected='selected'" if interval.maxOperator == 'LessThan'  %> >  <  </option>
+        <option value='LessThanEqual' <%= "selected='selected'" if interval.maxOperator == 'LessThanEqual'  %> >  <=  </option>
+        <option value='GreaterThan' <%= "selected='selected'" if interval.maxOperator == 'GreaterThan' %> >  >  </option>
+        <option value='GreaterThanEqual' <%= "selected='selected'" if interval.maxOperator == 'GreaterThanEqual' %> >  >=  </option>
+		<option value='Equal' <%= "selected='selected'" if interval.maxOperator == 'Equal' %> >  ==  </option>
+		<option value='NotEqual' <%= "selected='selected'" if interval.maxOperator == 'NotEqual' %> >  !=  </option>
+      </select>
+    </td>
+	<td class='maxValue editableText' ><%= interval.maxValue.to_s %></td>
+	<td>
+      <%#= interval.ucumString.to_s %>
+	  <select class='ucumString select'>
+      <option value='m' <%= 'selected' if interval.ucumString == 'm' %>> meter </option>
+      <option value='m2' <%= 'selected' if interval.ucumString == 'm2' %>> m^2 </option>
+	  <option value='mm' <%= 'selected' if interval.ucumString == 'mm' %>> mm </option>
+	  <option value='mm2' <%= 'selected' if interval.ucumString == 'mm2' %>> mm^2 </option>
+	  <option value='cm' <%= 'selected' if interval.ucumString == 'cm' %>> cm </option>
+	  <option value='cm2' <%= 'selected' if interval.ucumString == 'cm2' %>> cm^2 </option>
+	  <option value='Hz' <%= 'selected' if interval.ucumString == 'Hz' %>> Hz </option>
+	  <option value='s' <%= 'selected' if interval.ucumString == 's' %>> s </option>
+	  <option value='ms' <%= 'selected' if interval.ucumString == 'ms' %>> ms </option>
+	  <option value='min' <%= 'selected' if interval.ucumString == 'min' %>> minute </option>
+	  <option value='h' <%= 'selected' if interval.ucumString == 'h' %>> hour </option>
+	  <option value='d' <%= 'selected' if interval.ucumString == 'd' %>> day </option>
+	  <option value='wk' <%= 'selected' if interval.ucumString == 'wk' %>> week </option>
+	  <option value='mo' <%= 'selected' if interval.ucumString == 'mo' %>> month </option>
+	  <option value='a' <%= 'selected' if interval.ucumString == 'a' %>> Year </option>
+	  <option value='g' <%= 'selected' if interval.ucumString == 'g' %>> gram </option>
+	  <option value='mg' <%= 'selected' if interval.ucumString == 'mg' %>> mg </option>
+	  <option value='kg' <%= 'selected' if interval.ucumString == 'kg' %>> kg </option>
+	  <option value='rad' <%= 'selected' if interval.ucumString == 'rad' %>> radian </option>
+	  <option value='deg' <%= 'selected' if interval.ucumString == 'deg' %>> degrees </option>
+	  <option value='pixel' <%= 'selected' if interval.ucumString == 'pixel' %>> pixel </option>
+	  <option value='HU' <%= 'selected' if interval.ucumString == 'HU' %>> hounsfield </option>
+	  <option value='%' <%= 'selected' if interval.ucumString == '%' %>>Percent </option>
+	  <option value='1' <%= 'selected' if interval.ucumString == '1' %>> ratio </option>
+	  <option value='Cel' <%= 'selected' if interval.ucumString == 'Cel' %>> Celsius </option>
+	  <option value='l' <%= 'selected' if interval.ucumString == 'l' %>> l </option>
+	  <option value='ml' <%= 'selected' if interval.ucumString == 'ml' %>> ml </option>
+    </select>
+    </td>
+  </tr>
+<% end %>

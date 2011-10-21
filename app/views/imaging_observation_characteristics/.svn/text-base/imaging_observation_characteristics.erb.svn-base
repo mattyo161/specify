@@ -1,0 +1,17 @@
+<h1>
+your imaging observation characteristics
+</h1>
+<table cellpadding="3" class="allowedTermsParent">
+<tr>
+<th align="left">ID</th>
+<th align="left">label</th>
+<th align="left">minCardinality</th>
+<th align="left">maxCardinality</th>
+<th align="left">itemNumber</th>
+<th align="left">shouldDisplay</th>
+<th align="left">explanatoryText</th>
+<th align="left">authors</th>
+<th align="left">annotatorConfidence</th>
+</tr>
+<%= render :partial => '/imaging_observation_characteristics/imaging_observation_characteristic', :collection => @imaging_observation_characteristics %>
+</table>

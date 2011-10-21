@@ -1,0 +1,21 @@
+  <div style="float:right">
+	<!--<img id="addNonQuantifiable<%= non_quantifiables[0].id.to_s if non_quantifiables.any? %>" class="addNonQuantifiableRow" src="/images/icons_transparent/Add_transparent24x24.png" alt="Add non-quantifiable row" title="Add non-quantifiable row"/>-->
+	<img id="addNonQuantifiable<%= characteristic_quantification.id.to_s %>" class="addNonQuantifiableRow" src="/images/icons_transparent/Add_transparent24x24.png" alt="Add non-quantifiable row" title="Add non-quantifiable row"/>
+	<img class="deleteNonQuantifiableRow" src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete non-quantifiable row" title="Delete non-quantifiable row"/>
+  </div>
+  <br/><br/>
+  <table class="notablesorter nonQuantifiableTable" style="width:100px" >
+    <thead>
+      <tr class='non_quantifiables'>
+        <%#= to_tags(['codeMeaning', 'codeValue', 'codingSchemeDesignator', 'codingSchemeVersion'].map { |t| t.titleize }) %>
+		<th style="width:30px"></th><th style='width:150px'>Code Meaning</th><th style='width:100px'>Code Value</th><th style='width:100px'>Coding Scheme<br/>Designator</th><th style='width:100px'>Coding Scheme<br/>Version</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% #  non_quantifiables.map { |at| at.codeMeaning }.to_s
+      %>
+	<% if non_quantifiables.any? %>
+      <%= render :partial => '/non_quantifiables/non_quantifiable', :collection => non_quantifiables %>
+	<% end %>
+    </tbody>
+  </table>

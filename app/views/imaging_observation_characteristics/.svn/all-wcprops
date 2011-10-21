@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/new.html.erb
+END
+_imaging_observation_characteristic.erb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/_imaging_observation_characteristic.erb
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/create.js.erb
+END
+imaging_observation_characteristics.erb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/imaging_observation_characteristics.erb
+END
+_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/_form.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/show.html.erb
+END
+new.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/imaging_observation_characteristics/new.js.erb
+END

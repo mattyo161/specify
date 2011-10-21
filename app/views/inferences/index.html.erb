@@ -1,0 +1,22 @@
+<h1>Listing inferences</h1>
+
+<table>
+  <tr>
+    <th>Annotatorconfidence</th>
+    <th>Component</th>
+  </tr>
+
+<% @inferences.each do |inference| %>
+  <tr>
+    <td><%=h inference.annotatorConfidence %></td>
+    <td><%=h inference.component_id %></td>
+    <td><%= link_to 'Show', inference %></td>
+    <td><%= link_to 'Edit', edit_inference_path(inference) %></td>
+    <td><%= link_to 'Destroy', inference, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New inference', new_inference_path %>

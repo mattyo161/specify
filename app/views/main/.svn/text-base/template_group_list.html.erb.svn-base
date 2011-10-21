@@ -1,0 +1,2 @@
+<% templateGroupList = '' ; current_user.template_containers.each { |t| templateGroupList += '<p id="TemplateContainer' + t.id.to_s + '"><span style="white-space:nowrap">&nbsp;&nbsp;' + t.name + "</span></p>" } %>
+<%= templateGroupList %>

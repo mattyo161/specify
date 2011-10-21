@@ -1,0 +1,53 @@
+<p>
+  <b>Name:</b>
+  <%=h @new_aim_template.name %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%=h @new_aim_template.version %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @new_aim_template.description %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%=h @new_aim_template.uid %>
+</p>
+
+<p>
+  <b>Codevalue:</b>
+  <%=h @new_aim_template.codeValue %>
+</p>
+
+<p>
+  <b>Codemeaning:</b>
+  <%=h @new_aim_template.codeMeaning %>
+</p>
+
+<p>
+  <b>Codingschemedesignator:</b>
+  <%=h @new_aim_template.codingSchemeDesignator %>
+</p>
+
+<p>
+  <b>Codingschemeversion:</b>
+  <%=h @new_aim_template.codingSchemeVersion %>
+</p>
+
+<p>
+  <b>Authors:</b>
+  <%=h @new_aim_template.authors %>
+</p>
+
+<p>
+  <b>Creationdate:</b>
+  <%=h @new_aim_template.creationDate %>
+</p>
+
+
+<%= link_to 'Edit', edit_aim_template_path(@new_aim_template) %> |
+<%= link_to 'Back', aim_templates_path %>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>AIM Template Manager <%= current_user.login %>
+      <% #  controller.controller_name
+      %><% #  controller.action_name
+      %>
+    </title>
+    <%= stylesheet_link_tag 'Newer_theme/jquery.ui.all' %>
+    <%= stylesheet_link_tag 'blue_css_theme/style' %>
+    <%= stylesheet_link_tag 'jquery-ui' %>
+    <%= stylesheet_link_tag 'main_page' %>
+    <%= stylesheet_link_tag 'jquery.treeTable' %>
+    <%= stylesheet_link_tag 'application' %>
+    <% # javascript_include_tag :defaults
+    %>
+    <% if protect_against_forgery? %>
+      <script type='text/javascript'>
+        //<![CDATA[
+        window._auth_token_name = "#{request_forgery_protection_token}";
+        window._auth_token = "#{form_authenticity_token}";
+        //]]>
+      </script>
+    <% end %>
+    <%= javascript_include_tag ['jquery', 'application'] %>
+    <%= javascript_include_tag ["Newer_theme/jquery-latest", "Newer_theme/jquery-ui-latest", "Newer_theme/jquery.layout-1.3.0.rc28k", "Newer_theme/debug", "Newer_theme/themeswitchertool", "jquery.tablesorter.min", "jquery.blockUI", 'main_page', 'jquery.treeTable'] %>
+    <script type="text/javascript">
+      function stopRKey(evt) {
+        var evt = (evt) ? evt : ((event) ? event : null);
+        var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+        if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+      }
+
+      document.onkeypress = stopRKey;
+    </script>
+  </head>
+  <body class="custom">
+    <%= render :file => '/layouts/error.html.erb' %>
+    <div id="outer-north" style="background-color:#121D26; left:0px; right:0px" >
+      <%= render :file => '/layouts/header.html.erb' %>
+    </div>
+    <div id="page-loading">Loading...</div>
+    <!--<div id="outer-south" class="hidden"></div>-->
+    <div id="outer-center" class="hidden">
+      <%= yield  %>
+    </div><!-- /#outer-center -->
+  </body>
+</html>

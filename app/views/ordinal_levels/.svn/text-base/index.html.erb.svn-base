@@ -1,0 +1,24 @@
+<h1>Listing ordinal_levels</h1>
+
+<table>
+  <tr>
+    <th>Integervalue</th>
+    <th>Description</th>
+    <th>Scale</th>
+  </tr>
+
+<% @ordinal_levels.each do |ordinal_level| %>
+  <tr>
+    <td><%=h ordinal_level.integerValue %></td>
+    <td><%=h ordinal_level.description %></td>
+    <td><%=h ordinal_level.scale_id %></td>
+    <td><%= link_to 'Show', ordinal_level %></td>
+    <td><%= link_to 'Edit', edit_ordinal_level_path(ordinal_level) %></td>
+    <td><%= link_to 'Destroy', ordinal_level, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ordinal_level', new_ordinal_level_path %>

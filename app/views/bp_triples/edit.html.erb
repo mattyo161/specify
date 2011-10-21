@@ -1,0 +1,24 @@
+<h1>Editing bp_triple</h1>
+
+<% form_for(@bp_triple) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :domain %><br />
+    <%= f.text_field :domain %>
+  </p>
+  <p>
+    <%= f.label :property %><br />
+    <%= f.text_field :property %>
+  </p>
+  <p>
+    <%= f.label :range %><br />
+    <%= f.text_field :range %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @bp_triple %> |
+<%= link_to 'Back', bp_triples_path %>

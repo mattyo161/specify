@@ -1,0 +1,5 @@
+//alert('destroy');
+$("#templateContainerList").html("<%= escape_javascript(render :file => '/main/template_group_list.html.erb') %>") ;
+$("#availableTemplatesTableBody").html("<%= escape_javascript(render :partial => '/aim_templates/available_templates/', :collection => current_user.aim_templates) %>");
+$('#templateGroupTableDiv').html("<%= escape_javascript(render :action => '/main/select_template_container/') %>") ;
+//$('#availableTemplatesTableBody').html("<%= escape_javascript(render :action => '/template_containers/included_templates/foobar') %>") ;

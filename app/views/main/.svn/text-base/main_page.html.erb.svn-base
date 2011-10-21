@@ -1,0 +1,15 @@
+    <ul id="tabbuttons" class="hidden" style="border-bottom-width:0px">
+                <li class="tab1"><a href="#tab1">Template Groups</a></li>
+                <li class="tab2"><a href="#tab2">Templates</a></li>
+                <li class="tab3"><a href="#tab3">Lexicons</a></li>
+                <li class="tab4"><a href="#tab4">About/Help</a></li>
+    </ul>
+    <div id="tabpanels">
+      <%= render :file => 'main/templates_groups_tab.html.erb' %>
+      <%= render :file => 'main/templates_tab.html.erb' %>
+      <%= render :file => 'main/lexicon_tab.html.erb' %>
+      <%= render :file => 'main/about_help_tab.html.erb' %>
+    </div><!-- /#tabpanels -->
+    <div id="loading_div">
+		<img src="/images/loading_big.gif" alt="L O A D I N G . . . P L E A S E   W A I T . . . "></img>
+	</div>

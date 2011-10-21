@@ -1,0 +1,28 @@
+<p>
+  <b>Uid:</b>
+  <%=h @calculation.uid %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @calculation.description %>
+</p>
+
+<p>
+  <b>Mathml:</b>
+  <%=h @calculation.mathML %>
+</p>
+
+<p>
+  <b>Algorithmname:</b>
+  <%=h @calculation.algorithmName %>
+</p>
+
+<p>
+  <b>Algorithmversion:</b>
+  <%=h @calculation.algorithmVersion %>
+</p>
+
+
+<%= link_to 'Edit', edit_calculation_path(@calculation) %> |
+<%= link_to 'Back', calculations_path %>

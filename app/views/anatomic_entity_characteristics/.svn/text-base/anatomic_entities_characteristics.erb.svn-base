@@ -1,0 +1,17 @@
+<h1>
+your anatomic entity characteristics
+</h1>
+<table cellpadding="3">
+<tr>
+    <th>ID</th>
+    <th>label</th>
+    <th>minCardinality</th>
+    <th>maxCardinality</th>
+    <th>itemNumber</th>
+    <th>shouldDisplay</th>
+    <th>explanatoryText</th>
+    <th>authors</th>
+    <th>annotatorConfidence</th>
+</tr>
+<%= render :partial => 'anatomic_entity_characteristics/list', :collection => @anatomic_entity_characteristics %>
+</table>

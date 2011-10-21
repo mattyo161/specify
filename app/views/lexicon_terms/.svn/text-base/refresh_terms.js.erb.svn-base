@@ -1,0 +1,4 @@
+//alert('select lexicon1') ;
+$("#lexicontable").html("<%= escape_javascript(render :file => '/lexicon_terms/lexicon_terms.html.erb', :locals => { :lexicon_terms => @lexicon_terms } ) %>") ;
+$.unblockUI();
+//alert('select lexicon2: <%= @obj.class.to_s %>') ;

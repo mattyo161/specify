@@ -1,0 +1,28 @@
+<h1>Listing bp_properties</h1>
+
+<table>
+  <tr>
+    <th>Bp ontology</th>
+    <th>Name</th>
+    <th>Bpid</th>
+    <th>Domain</th>
+    <th>Range</th>
+  </tr>
+
+<% @bp_properties.each do |bp_property| %>
+  <tr>
+    <td><%=h bp_property.bp_ontology_id %></td>
+    <td><%=h bp_property.name %></td>
+    <td><%=h bp_property.bpid %></td>
+    <td><%=h bp_property.domain %></td>
+    <td><%=h bp_property.range %></td>
+    <td><%= link_to 'Show', bp_property %></td>
+    <td><%= link_to 'Edit', edit_bp_property_path(bp_property) %></td>
+    <td><%= link_to 'Destroy', bp_property, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bp_property', new_bp_property_path %>

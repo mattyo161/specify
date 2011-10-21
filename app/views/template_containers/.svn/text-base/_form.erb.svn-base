@@ -1,0 +1,35 @@
+<% form_for form, :html => {:id => 'create_template_container', :class => 'ajaxForm'} do |f| %>
+<table style="text-align:left; font-size:small; margin-left: auto; margin-right: auto;">
+<tbody>
+  <%= f.error_messages %>
+  <tr><td>
+    <%= f.label :"name".to_s %><br />
+    <%= f.text_field :name, :size => "30" %>
+  </td></tr>
+  <tr><td>
+    <%= f.label :"version".to_s %><br />
+    <%= f.text_field :version, :size => "30"  %>
+  </td></tr>
+ <tr><td>
+    <%= f.label :"description".to_s %><br />
+    <%= f.text_area :description, :style => "width:200px", :rows => "5", :cols => "60" %>
+  </td></tr>
+  <tr><td>
+    <%= f.label :authors.to_s %><br />
+    <%= f.text_field :authors, :disabled => 'true', :value => current_user.login, :size => "30" %>
+  </td></tr>
+  <tr><td>
+    <%= f.label :"creationDate".to_s %><br />
+    <%= f.text_field :creationDate, :size => "30", :disabled => 'true', :value => Date.today.strftime('%Y-%m-%d')  %>
+  </td></tr>
+</tbody>
+</table>
+<% end %>
+<table style="text-align:left; font-size:small; margin-left: auto; margin-right: auto;">
+<tbody>
+  <tr><td style="text-align:center">
+    <button class="button" id="doneCreatingTemplateContainer">Done</button>
+    <button class="button" id="cancelCreatingTemplateContainer">Cancel</button>
+  </td></tr>
+</tbody>
+</table>

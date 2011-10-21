@@ -1,0 +1,108 @@
+<!--<h1>Editing aim template</h1>-->
+
+<% form_for(@aim_template, :html => { :id => 'editTemplateForm' }) do |f| %>
+  <%= f.error_messages %>
+  <table>
+    <tr><td>
+        <%= f.label :name %><br />
+        <%= f.text_field :name, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :version %><br />
+        <%= f.text_field :version, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :description %><br />
+        <%= f.text_area :description, :style=>"width:200px", :rows=>"5", :cols=>"60" %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :uid %><br />
+        <%= f.text_field :uid, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :authors %><br />
+        <%= f.text_field :authors, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :codeValue %><br />
+        <%= f.text_field :codeValue, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :codeMeaning %><br />
+        <%= f.text_field :codeMeaning, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :codingSchemeDesignator %><br />
+        <%= f.text_field :codingSchemeDesignator, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :codingSchemeVersion %><br />
+        <%= f.text_field :codingSchemeVersion, :size => '30' %>
+      </td></tr>
+    <tr><td>
+        <%= f.label :creationDate %><br />
+        <%= f.date_select :creationDate, :order => [:year, :month, :day], :size => '30', :disabled => 'true', :value => Date.today.strftime('%Y-%m-%d') %>
+      </td></tr>
+    <!--  <tr><td>
+    <% # = f.submit 'Update'
+    %>
+        </td></tr> -->
+  </table>
+<% end %>
+<table><tr><td style="text-align:center">
+      <button class="button" id="doneEditingTemplate">Done</button>
+      <button class="button" id="cancelEditingTemplate">Cancel</button>
+    </td></tr></table>
+<!-- <% # = link_to 'Show', @aim_template
+    %> |
+    <% # = link_to 'Back', '/'
+    %> -->
+
+
+<!--
+
+          <table style="text-align:left; font-size:small; margin-left: auto; margin-right: auto;">
+            <tbody>
+              <tr><td>
+							Name*<br/>
+                  <input id="name" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Version*<br/>
+                  <input id="version" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Description*<br/>
+                  <textarea id="description" style="width:200px" rows="5" cols="60"></textarea>
+                </td></tr>
+              <tr><td>
+							Uid*<br/>
+                  <input id="uid" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Authors<br/>
+                  <input id="authors" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Code value*<br/>
+                  <input id="codeValue" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Code meaning*<br/>
+                  <input id="codeMeaning" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Coding scheme designator*<br/>
+                  <input id="codingSchemeDesignator" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Coding scheme version<br/>
+                  <input id="codingSchemeVersion" type="text" size="30"/>
+                </td></tr>
+              <tr><td>
+							Date created<br/>
+                  <input id="dateCreated" type="text" size="30"/>
+                </td></tr>
+            </tbody>
+          </table>
+-->

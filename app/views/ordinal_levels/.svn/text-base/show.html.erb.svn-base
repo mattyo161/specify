@@ -1,0 +1,18 @@
+<p>
+  <b>Integervalue:</b>
+  <%=h @ordinal_level.integerValue %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @ordinal_level.description %>
+</p>
+
+<p>
+  <b>Scale:</b>
+  <%=h @ordinal_level.scale_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_ordinal_level_path(@ordinal_level) %> |
+<%= link_to 'Back', ordinal_levels_path %>

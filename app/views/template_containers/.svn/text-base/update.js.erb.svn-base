@@ -1,0 +1,4 @@
+//alert('update');
+$("#templateGroupTableDiv").html("<%= escape_javascript(render :file => '/main/template_group_table.html.erb') %>") ;
+$("#templateContainerList").html("<%= escape_javascript(render :file => '/main/template_group_list.html.erb') %>") ;
+$("#TemplateContainer"+selectedTemplateContainerId).click();

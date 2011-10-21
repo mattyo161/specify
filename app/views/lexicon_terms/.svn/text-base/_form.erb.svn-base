@@ -1,0 +1,20 @@
+<% form_tag({ :action => "new_lexicon", :controller => "lexicon_terms"}, :id=>"create_lexicon", :class=>"ajaxForm", :multipart => true ) do %>
+  <table style="text-align:left; font-size:small; margin-left: auto; margin-right: auto;">
+    <tbody>
+      <% #  error_messages
+      %>
+      <tr><td>
+     <label for="lexiconName">Lexicon Name*</label><br />
+	 <%=  text_field_tag :lexiconName, '', :size => "30" %>
+      </td></tr>
+    </tbody>
+  </table>
+<% end %>
+<table style="text-align:left; font-size:small; margin-left: auto; margin-right: auto;">
+  <tbody>
+    <tr><td style="text-align:center">
+        <button class="button" id="doneCreatingLexicon">Done</button>
+        <button class="button" id="cancelCreatingLexicon">Cancel</button>
+      </td></tr>
+  </tbody>
+</table>

@@ -1,0 +1,37 @@
+<div class='allowedTermsSection'>
+    <div>
+      <br />
+      <a href='#' class='collapseSection'>
+        <div style='float:left'>
+          <img alt='' src='/images/Expanded8x8.png' class='expandCollapseImg'/>
+          <b>Allowed Terms</b>
+        </div>
+      </a>
+	  &nbsp;&nbsp;<img alt='' src='/images/icons_transparent/Add_transparent16x16.png' id='<%= parent_type %>-addAllowedTerm<%= parent_id %>'  class='addAllowedTerm' title='Add Allowed Term'/>
+      &nbsp;&nbsp;<img alt='' src='/images/icons_transparent/Delete_Transparent16x16.png' class='deleteAllowedTerm' title='Delete Allowed Term'/>
+      <br />
+    </div>
+  <% allowed_term_type = (defined? component_term) ? 'component' : (allowed_terms.any? ? (allowed_terms[0].anatomic_entity_characteristic.blank? ? ('imaging_observation_characteristic') : ('anatomic_entity_characteristic')):(''))
+  %>
+    <div class="<%= allowed_term_type %>">
+      <!-- 'id="allowedTermsTable' + allowed_terms[0].id.to_s + '"' if !allowed_terms.blank? -->
+      <table class='notablesorter allowedTermsTable <%= 'allowedTermsTableForComponents' if defined? component_term %>' style='width:100px'>
+        <thead>
+          <tr class='allowed_terms'>
+            <th style='width:200px'>Term (code meaning)</th> <th style='width:60px'>Code</th> <th style='width:100px'>Source</th>
+            <% if (!defined?component_term) || ((defined? component_term) && !(component_type == 'inference' || component_type == 'calculation') ) %>
+			<th <%= (defined? component_term) ? 'style="width:100px" ' : 'style="width:500px" ' %> >
+              <%= ( defined?component_term ) ? 'Ask If Present' : 'Quantification' %>
+            </th>
+			<% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% #  allowed_terms.map { |at| at.codeMeaning }.to_s
+          %>
+          <%= render :partial => '/allowed_terms/allowed_term', :collection => allowed_terms, :locals => { :component_term => (defined? component_term) } if allowed_terms.any?
+        %>
+        </tbody>
+      </table>
+    </div>
+  </div>

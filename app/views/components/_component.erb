@@ -1,0 +1,63 @@
+<% # @stuff = [component.imaging_observations, component.anatomic_entities, component.inferences, component.calculations, component.allowed_terms]
+%>
+<% if !component.blank? %>
+  <% #  fields = %w(label explanatoryText minCardinality maxCardinality shouldDisplay authors)
+  %>
+  <% column_names = ['', '', 'Label', 'Description', 'AIM Class', 'Min', 'Max', 'Display', 'Confidence', 'Authors']  %>
+  <table class='notablesorter componentTable allowedTermParent' id='component<%= component.id.to_s %>'>
+    <thead>
+      <tr>
+        <th style='width:20px'></th> <th>
+          <table class='notablesorter' style="border-spacing:0; width: 100px">
+            <thead>
+              <tr>
+                <th style='width:150px'>Label</th> <th style='width:200px'>Description</th> <th style='width:180px'>AIM Class</th> <th style='width:40px'>Min</th><th style='width:40px'>Max</th> <th style='width:75px'>Display</th> <th style='width:90px'>Confidence</th> <th style='width:100px'>Authors</th>
+              </tr>
+            </thead>
+          </table>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class='components' id='component<%= component.id.to_s %>' name='element'>
+        <td style='width:24px; vertical-align:text-top; text-align:center' class='expand'>
+          <img alt='' src='/images/Expanded16x16.png' class='collapseComponent'/>
+        </td>
+        <td>
+          <table class='notablesorter' style='border-spacing:0; width: 100px'>
+            <tbody>
+              <tr class='componentAttrs'>
+                <td style='width:150px' class='label editableText' title='<%= component.label %>'><%= component.label %></td>
+                <td style='width:200px' class='explanatoryText editableText' title='<%= component.explanatoryText %>'><%= component.explanatoryText %></td>
+                <td style='width:180px'>
+                  <span style='white-space: nowrap'>
+                    <!-- <% form_tag :id=>"componentTypeForm" do %> ({:action => "", :controller => "main"}, :multipart => true, :id=>"", :class=>"ajaxForm") -->
+                      <select class='text aim_class' style='vertical-align:middle' <%= "id='" + component.component_type + component.send(component.component_type).id.to_s + "'" unless component.component_type.blank? || component.send(component.component_type).blank? %>>
+                        <option class="anatomic_entity" value='anatomic_entities' <%= 'selected' if component.component_type == 'anatomic_entity' %>>Anatomic Entity</option>
+                        <option class="imaging_observation" value='imaging_observations' <%= 'selected' if component.component_type == 'imaging_observation' %>>Imaging Observation</option>
+                        <option class ="inference" value='inferences' <%= 'selected' if component.component_type == 'inference' %>>Inference</option>
+                        <option class="calculation" value='calculations' <%= 'selected' if component.component_type == 'calculation' %>>Calculation</option>
+                      </select>
+                    <!-- <% end %> -->
+                    <img alt='' src='/images/icons_transparent/Edit.png' style='vertical-align:middle; display:none' width='20' height='20' class='editCalculation' title='Edit Calculation'/>
+                  </span>
+                </td>
+                <td style='width:40px' class='minCardinality editableText' title='<%= component.minCardinality %>'><%= component.minCardinality %></td>
+                <td style='width:40px' class='maxCardinality editableText' title='<%= component.maxCardinality %>'><%= component.maxCardinality %></td>
+                <td style='width:75px'><input type='checkbox' class='shouldDisplay' value='display' <%= 'checked' if component.shouldDisplay %> /></td>
+                <td style='width:90px'><input type='checkbox' class='annotatorConfidence' value='confidence' <%= 'disabled' if component.component_type == 'calculation' %> <%= 'checked' if !component.component_type.blank? && component.component_type != 'calculation' && !component.send(component.component_type).blank? && component.send(component.component_type).annotatorConfidence %>/></td> <!-- NEEDS UPDATE -->
+                <td style='width:100px' class='authors editableText' title='<%= component.authors %>'><%= component.authors %></td>
+              </tr>
+            </tbody>
+          </table>
+          <div style='padding-left:20px' class='componentInfo'>
+            <%= render :partial => component.component_type.pluralize + '/' + component.component_type, :object => component.send(component.component_type) if component.component_type %>
+            <%= render :file => 'allowed_terms/allowed_terms.html.erb', :locals => { :allowed_terms => component.allowed_terms, :component_type => component.component_type, :component_term => true, :parent_id => component.id.to_s, :parent_type => 'components' }
+          %>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<% component.update_attributes(:itemNumber => component_counter) if component.itemNumber != component_counter %>
+<% end %>

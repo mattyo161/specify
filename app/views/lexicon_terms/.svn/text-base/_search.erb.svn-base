@@ -1,0 +1,9 @@
+<% unless search.blank? %>
+<% fields = ['codeMeaning', 'codeValue', 'lexiconName'] %>
+<% dataFields = ['codeMeaning', 'codeValue', 'codingSchemeDesignator', 'codingSchemeVersion'] %>
+  <tr class="<%= {:data => Hash[*dataFields.zip(dataFields.map { |f| search.send(f) }).flatten]}.to_param %>"> <!-- .gsub('%5B', '[').gsub('%5D', ']') -->
+    <%= wrapper(search, fields, 'td') %>
+  </tr>
+<% else %>
+  <tr><td></td></tr>
+<% end %>

@@ -1,0 +1,227 @@
+body {
+	background-color:white;
+}	
+
+#outer-north .topper {
+	display:none;
+}
+#outer-north {
+	height: 140px !important;
+	background-image: url("../images/logoheader.jpg") !important;
+	background-repeat: no-repeat;
+	background-color: white !important;
+	background-position:top left;
+}
+#outer-north .logo img {
+	display:none;
+}
+
+#outer-south .logos {
+	text-align: right;
+}
+
+#outer-south .logos img {
+	height: 30px;
+}
+
+#outer-south .copyright {
+	color: #888888;
+	font-size: 8px;
+	text-align:left;
+	float:left;
+	
+}
+
+#outer-south .copyright a:link, #outer-south .copyright a:visited {
+	text-decoration:none;
+	color:#888888;
+}
+
+#outer-south .copyright a:hover, #outer-south .copyright a:active {
+	color:#888888;
+	text-decoration:underline;
+}
+
+#outer-north .logo {
+	height: 70px;
+	width: 150px;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+.application b span {
+	color:#3C57A6 !important;
+	margin-left: 5px;
+	font-size:25px !important;
+}
+#outer-north .user {
+	margin-left: 30px;
+	color: #666;
+}
+
+#outer-north #header-nav {
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+#outer-north #header-nav a, 
+#outer-north #header-nav a:hover, 
+#outer-north #header-nav a:visited, 
+#outer-north #header-nav a:active 
+{
+	color: blue;
+}
+
+
+#main_div .ui-layout-west .ui-widget-content {
+	background-image: none !important;
+}
+
+#main_div #tabbuttons .logos {
+	float:right;
+	height: 30px;
+	display:none;
+}
+
+#main_div #tabbuttons .logos a {
+	background-color: none;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+#main_div #tabbuttons li {
+	padding-bottom: 0;
+}
+
+.mybutton {
+	background-color:#5970B4;
+}
+
+#outer-center {
+	background-color:white !important;
+}
+
+#account_login {
+	text-align:right;
+	font-size:12px;
+	width:100%;
+	position:absolute;
+	top:15px;
+	right:15px;
+	font-weight:normal;
+}
+
+#account_login a:link, #account_login a:visited {
+	text-decoration:underline;
+	color:black !important;
+}
+
+#account_login a:hover, #account_login a:active {
+	color:#3C57A6 !important;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	top:3px !important;
+}
+
+.custom #tabbuttons .ui-tabs-selected a {
+	background-color:#3C57A6 !important;
+}
+
+.custom #tabbuttons a {
+	background-color:#5970B4 !important;
+}
+
+.custom #tabpanels .ui-widget-header {
+background-color:#5970B4 !important;
+border:none;
+}
+
+.custom #tabbuttons.ui-widget-header {
+background-color:white !important;
+border:none;
+z-index:1;
+}
+
+.custom #tabpanels #tab1, .custom #tab1 .ui-layout-resizer-sliding, .custom #tab1 .ui-layout-west, .custom #tab1 .ui-layout-east {
+	background-color:#3C57A6 !important;
+}
+
+.custom #tabpanels #tab2, .custom #tab2 .ui-layout-resizer-sliding, .custom #tab2 .ui-layout-west, .custom #tab2 .ui-layout-east {
+	background-color:#3C57A6 !important;
+}
+
+.custom #tab3 .toolbar, .custom #tabpanels #tab3, .custom #tab3 .ui-layout-resizer-sliding, .custom #tab3 .ui-layout-west, .custom #tab3 .ui-layout-east {
+	background-color:#3C57A6 !important;
+}
+
+.custom #tabpanels #tab4, .custom #tab4 .ui-layout-resizer-sliding, .custom #tab4 .ui-layout-west, .custom #tab4 .ui-layout-east {
+	background-color:#3C57A6 !important;
+}
+
+.custom #tabpanels #tab5, .custom #tab5 .ui-layout-resizer-sliding, .custom #tab5 .ui-layout-west, .custom #tab5 .ui-layout-east {
+	background-color:#3C57A6 !important;
+}
+
+h1 {
+	font-size:16px;
+	padding:15px;
+}
+
+#bioportal_nav {
+	overflow:auto !important;
+}
+
+.application {
+	font-size:18px;
+	position:absolute;
+	top:145px;
+	right:15px;	
+	z-index:100;
+}
+
+#bioportal_triples {
+	width:600px;
+}
+
+#bioportal_content {
+	padding-left:20px;
+}
+
+#bioportal_triples ul, #bioportal_content ul {
+	margin:0;
+	padding:0;
+}
+
+#bioportal_content ul li ul {
+	margin:0;
+	padding:0 0 0 20px;
+}
+
+#bioportal_content li {
+	list-style:none;
+	padding:0;
+	margin:0 0 3px 0;
+}
+
+#bioportal_triples li {
+	list-style:none;
+	padding:0;
+	margin:0 0 5px 0;
+}
+
+#bioportal_triples li.domain {
+	margin-bottom:15px;
+}
+
+#bioportal_triples a:link, #bioportal_triples a:visited, #bioportal_content a:link, #bioportal_content a:visited {
+	text-decoration:none;
+	color:#3C57A6 !important;
+}
+
+#bioportal_triples a:hover, #bioportal_triples a:active, #bioportal_content a:hover, #bioportal_content a:active {
+	color:red !important;
+}
+
+#bioportal_triples span.domain {
+	font-weight:bold;
+}

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users/edit.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users/new.html.erb
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users/create.js.erb
+END
+_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users/_form.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users/show.html.erb
+END
+_reset_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users/_reset_form.erb
+END
+reset.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/users/reset.html.erb
+END

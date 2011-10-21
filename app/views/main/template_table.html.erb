@@ -1,0 +1,8 @@
+<% if @aim_template.blank? %>
+  <h1><%= AimTemplate.all.any? ? 'Select an AIM Template to view (left panel)' : 'No AIM Templates available' %></h1>
+<% end %>
+<% if !@aim_template.blank?
+%>
+  <%= render :partial => '/aim_templates/aim_template', :object => @aim_template
+%>
+<% end %>

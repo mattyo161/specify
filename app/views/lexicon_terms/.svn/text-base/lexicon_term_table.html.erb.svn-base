@@ -1,0 +1,10 @@
+<table class="tablesorter text">
+  <thead>
+    <tr>
+      <%= table_header(LexiconTerm.new) %>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => '/lexicon_terms/lexicon_term', :collection => lexicon_terms %>
+  </tbody>
+</table>

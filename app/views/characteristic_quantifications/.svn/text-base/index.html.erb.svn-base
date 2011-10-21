@@ -1,0 +1,24 @@
+<h1>Listing characteristic_quantifications</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Allowed term</th>
+  </tr>
+
+<% @characteristic_quantifications.each do |characteristic_quantification| %>
+  <tr>
+    <td><%=h characteristic_quantification.name %></td>
+    <td><%=h characteristic_quantification.type %></td>
+    <td><%=h characteristic_quantification.allowed_term_id %></td>
+    <td><%= link_to 'Show', characteristic_quantification %></td>
+    <td><%= link_to 'Edit', edit_characteristic_quantification_path(characteristic_quantification) %></td>
+    <td><%= link_to 'Destroy', characteristic_quantification, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New characteristic_quantification', new_characteristic_quantification_path %>

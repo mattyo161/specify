@@ -1,0 +1,76 @@
+<div>
+  <div id="<%= element.to_s %>_tabs_inner_frame">
+    <ul>
+      <li style="height:20px"><a href="#<%= element.to_s %>_tabs_inner_frame-1" style="padding:2px">Local</a></li>
+      <!--<li style="height:20px"><a href="#<%= element.to_s %>_tabs_inner_frame-2" style="padding:2px">Remote</a></li>-->
+    </ul>
+    <div id="<%= element.to_s %>_tabs_inner_frame-1" style="padding-top:2px; padding-left:2px">
+      <% form_tag({:action => "search", :controller => "lexicon_terms"}, :multipart => true, :class=>"localSearchForm") do %>
+        <%= render(:file => '/lexicon_terms/local_search.html.erb', :locals => {:element => element}) %>
+      <% end %>
+      <a href="#" style="float:right" class="searchTermsLocal" id="<%= element.to_s %>_searchTermsLocal" ><img src="/images/icons_transparent/Search_Transparent24x24.png" alt="Search" title="Search Terms"/></a>
+	  <br/>
+      <table class="tablesorter text" id="<%= element.to_s %>_myTable1">
+        <thead>
+          <tr>
+            <th>Term(code meaning)</th>
+            <th>Code</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody id="<%= search_lexicon %>">
+		  <tr><td colspan="3"></td></tr>
+          <%= render :partial => '/lexicon_terms/search', :collection => [] %>
+        </tbody>
+      </table>
+    </div> <!-- end of tabs_inner_frame-1 -->
+  </div> <!-- end of tabs_inner_frame -->
+</div>
+
+<!-- start commented section "tabs_inner_frame-2 -->
+<%#*<!--<button class="button" id="addSelectedTerm" style="font-size:small;">Add</button>-->%>
+<%#*<!--<a href="#" style="float:left" id="addSelectedLocalTerm" ><img src="/images/icons_transparent/Add_transparent24x24.png" alt="Add Terms"></a>-->%>
+
+<%#*<!--    <div id="tabs_inner_frame-2" style="padding-top:2px; padding-left:2px">%>
+      <%#*<input type="text" style="width:100%; font-size:small" value="Search terms"/><br />%>
+      <%#*<input type="radio" value="Bioportal" name="radio_options"/>	<span class="radio_options_text">Bioportal</span>%>
+      <%#*<input type="radio" value="NCICB Bioportal" name="radio_options"/> <span class="radio_options_text">NCICB Bioportal</span>%>
+<%#*<!--<button class="button" type="submit" style="float:right; width:80px; height:25px;"><span class="radio_options_text">Search</span></button>%>
+<%#*<a href="#" style="float:right" id="searchTermsRemote" ><img src="/images/icons_transparent/Search_Transparent24x24.png" alt="Search" title="Search Terms"/></a>%>
+
+<%#*<form>%>
+  <%#*<select name="collection_list" size="5" multiple="multiple" style="font-size:small; width:100%" >%>
+    <%#*<option>Radlex</option>%>
+    <%#*<option>NCI</option>%>
+    <%#*<option>SNOMED CT</option>%>
+    <%#*<option>ICD-9 CM</option>%>
+  <%#*</select>%>
+<%#*</form>%>
+
+<%#*<table class="tablesorter text" id="myTable2">%>
+  <%#*<thead>%>
+    <%#*<tr>%>
+      <%#*<th>Term(code meaning)</th>%>
+      <%#*<th>Code</th>%>
+      <%#*<th>Source</th>%>
+    <%#*</tr>%>
+  <%#*</thead>%>
+  <%#*<tbody>%>
+    <%#*<tr>%>
+      <%#*<td>Term-1</td>%>
+      <%#*<td>RIDxxx</td>%>
+      <%#*<td>RadLex</td>%>
+    <%#*</tr>%>
+    <%#*<tr>%>
+      <%#*<td>Term-2-1-1</td>%>
+      <%#*<td>RIDxxx</td>%>
+      <%#*<td>RadLex</td>%>
+    <%#*</tr>%>
+  <%#*</tbody>%>
+<%#*</table>%>
+
+<%#*<!--<button class="button" id="addTerms" style="font-size:small;">Add</button>-->%>
+<%#*<!--<a href="#" style="float:left" id="addSelectedRemoteTerm" ><img src="/images/icons_transparent/Add_transparent24x24.png" alt="Add Terms"></a>-->%>
+
+<%#*<!--</div>--> <!-- end of tabs_inner_frame-2 -->%>
+<!-- end commented section "tabs_inner_frame-2 -->

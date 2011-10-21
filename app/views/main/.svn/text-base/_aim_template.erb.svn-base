@@ -1,0 +1,12 @@
+<% if aim_template != nil %>
+<tr id="<%= aim_template.id.to_s %>">
+    <%= wrapper(aim_template, aim_template.attribute_names, 'td') # wrapper([aim_template.name, aim_template.version, aim_template.description, aim_template.authors, aim_template.creationDate], 'td')
+     %>
+<!--     <td><%= aim_template.id %></td>
+    <td><%= aim_template.name %></td>
+    <td><%= aim_template.version %></td>
+    <td><%= aim_template.description %></td>
+    <td><%= aim_template.authors %> </td>
+    <td><%= aim_template.creationDate %></td> -->
+</tr>
+<% end %>

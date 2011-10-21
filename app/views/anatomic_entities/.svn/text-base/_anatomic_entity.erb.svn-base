@@ -1,0 +1,40 @@
+<% # if anatomic_entity
+%>
+  <div class='characteristicsSection'>
+    <div>
+      <br />
+      <a href='#' class='collapseSection'>
+        <div style='float:left'>
+          <img alt='' src='/images/Expanded8x8.png' class='expandCollapseImg'/>
+          <b><span class='AIMClass'>Anatomic Entity</span> Characteristics</b>
+        </div>
+      </a>
+      &nbsp;&nbsp;<img alt='' src='/images/icons_transparent/Add_transparent16x16.png' <%= "id='addAnatomicEntityCharacteristic" + anatomic_entity.id.to_s + "'" unless anatomic_entity.blank? %> class='addAnatomicEntityCharacteristic' title='Add Anatomic Entity Characteristic'/>
+	  &nbsp;&nbsp;<img alt='' src='/images/icons_transparent/Delete_Transparent16x16.png' class='deleteComponentCharacteristic' title='Delete Anatomic Entity Characteristic'/>
+      <br />
+	  <a href="#" class="collapseAllComponentCharacteristics"><!-- <img alt='' src='/images/Expanded8x8.png' class='expandCollapseImg'/>&nbsp; --> <span>Expand/Collapse All</span></a>
+    </div>
+    <div>
+      <table class='notablesorter characteristicsTable'>
+        <thead>
+          <tr>
+            <th style='width:20px'></th>
+            <th>
+              <table class='notablesorter'  style='border-spacing:0; width:100px'>
+                <thead>
+                  <tr>
+                    <th style='width:150px'>Label</th> <th style='width:200px'>Description</th> <th style='width:40px'>Min</th> <th style='width:40px'>Max</th> <th style='width:75px'>Display</th> <th style='width:90px'>Confidence</th> <th style='width:100px'>Authors</th>
+                  </tr>
+                </thead>
+              </table>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render :partial => '/anatomic_entity_characteristics/anatomic_entity_characteristic', :collection => anatomic_entity.anatomic_entity_characteristics unless anatomic_entity.blank? || anatomic_entity.anatomic_entity_characteristics.blank? %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<% #  end
+%>

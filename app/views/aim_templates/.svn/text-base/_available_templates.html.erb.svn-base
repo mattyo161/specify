@@ -1,0 +1,9 @@
+<% if !available_templates.blank? %>
+  <% check = available_templates.template_containers.include?(@template_container) rescue false %>
+  <tr>
+    <td><%=h available_templates.name %></td>
+    <td><%= check_box_tag('aim_template[]', available_templates.id.to_s, check) %></td>
+  </tr>
+<% else %>
+  no available templates
+<% end %>

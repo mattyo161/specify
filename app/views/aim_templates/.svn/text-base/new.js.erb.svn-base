@@ -1,0 +1,5 @@
+$(".newTemplate").html("<%= escape_javascript(render :partial => 'form', :collection => [@new_template]) %>") ;
+ajaxLinks();
+//$(".newTemplate").html("<%= escape_javascript('') %>");
+//%>");
+

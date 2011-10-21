@@ -1,0 +1,13 @@
+<% # form_tag '/template_stores/new', :id => 'add_template', :class => 'ajaxForm' do 
+%>
+  <%= # submit_tag 'Add Template' 
+  %>
+<% # end if current_user 
+%>
+<div>
+<br>
+<%= link_to 'Create a new Template', '/template_stores/new', :class => "get" if current_user %>
+<div class="newTemplateStore"></div>
+<div class="template_stores">
+<%= render :file => '/template_stores/template_stores.erb' if current_user %>
+</div>

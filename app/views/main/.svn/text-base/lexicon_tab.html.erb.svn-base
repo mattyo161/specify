@@ -1,0 +1,81 @@
+<div id="tab3" class="tab ui-tabs-hide">
+  <div class="ui-layout-north ui-widget">
+    <div class="toolbar ui-widget-content ui-state-active">
+    </div>
+  </div>
+  <div class="ui-layout-south ui-widget">
+    <div class="toolbar ui-widget-content ui-state-default">
+    </div>
+  </div>
+  <div class="ui-layout-center">
+    <!--<div class="ui-widget-header ui-corner-top">Center-Center</div>-->
+    <div class="ui-widget-header ui-corner-top">
+      Lexicon Terms
+    </div>
+    <div id="lexicontable" class="ui-widget-content" style="padding:0px">
+      <!-- <table class="tablesorter text" id="myTable4"> -->
+      <%= render :file => '/lexicon_terms/lexicon_terms.html.erb', :locals => { :lexicon_terms => nil } %>
+    </div>
+    <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+      <!--<button class="button" style="float:left" id="createLexiconEntry">+</button>-->
+      <!--<a href="#" style="float:left" id="createLexiconEntry" ><img src="/images/icons/Add.png" alt="Create Lexicon"></a>-->
+      <a href="#" style="float:left" id="createLexiconEntry" ><img src="/images/icons_transparent/Add_transparent24x24.png" alt="Create Lexicon" title="Create Lexicon Entry"/></a>
+      <!--<button class="button" style="float:left" id="deleteLexiconEntry">-</button>-->
+      <!--<a href="#" style="float:left" id="deleteLexiconEntry" ><img src="/images/icons/Delete.png" alt="Delete Lexicon Entry"></a>-->
+      <a href="#" style="float:left" id="deleteLexiconEntry" ><img src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete Lexicon Entry" title="Delete Lexicon Entry"/></a>
+      <div id="deleteLexiconEntryMessage" style="display:none; background-color:#E2E5E5">
+        <span style="font-size:small">Are you sure you want to delete this lexicon entry?</span>
+        <br/><br/>
+        <!--
+        <a id="confirmDeleteLexiconEntry" href="#"><img src="/images/button_delete.gif" alt="Delete"></a>
+        <a id="cancelDeleteLexiconEntry" href="#"><img src="/images/button_cancel.gif" alt="Cancel"></a>
+        -->
+        <button class="button" style="margin:0px auto;" id="confirmDeleteLexiconEntry">Delete</button>
+        <button class="button" style="margin:0px auto;" id="cancelDeleteLexiconEntry">Cancel</button>
+      </div>
+      <!--<button class="button" style="float:left" id="copyLexiconEntry">Copy</button>-->
+      <!--<a href="#" style="float:left" id="copyLexiconEntry" ><img src="/images/icons/Doc-Copy.png" alt="Copy Lexicon Entry"></a>-->
+      <a href="#" style="float:left" id="copyLexiconEntry" ><img src="/images/icons_transparent/Copy_Transparent24x24.png" alt="Copy Lexicon Entry" title="Copy Lexicon Entry"/></a>
+      <!--<button class="button" style="float:left; height:16px" id="searchTerminology">Search Terminology</button>-->
+      <a href="#" style="float:left" id="searchTerminology" ><img src="/images/icons_transparent/Search_Transparent24x24.png" alt="Search Terminology" title="Search Terminology"/></a>
+
+	  <div id="createLexiconMessage" style="display:none; background-color:#E2E4E5">
+          <%= render :partial => '/lexicon_terms/form.erb', :collection => [LexiconTerm.new] %>
+    </div>
+	  
+      <div id="lexicon_search_terminology_tabs" style="display:none">
+        <button class="button" style="float:right" id="cancelSearchTerminology">X</button><br/><br/>
+        <%=  render :file => '/lexicon_terms/search_lexicon.html.erb', :locals => { :search_lexicon => 'lexiconTermSearchTableBody', :element => 'lexicons' } %>
+      </div> <!-- end of lexicon_search_terminology_tabs-->
+    </div>
+  </div>
+  <div class="ui-layout-west">
+    <div class="ui-layout-center">
+      <div class="ui-widget-header ui-corner-top">Lexicon</div>
+      <div class="ui-widget-content" id="lexiconList" style="background-image:url('/images/AIM_logo_15.png'); background-repeat:no-repeat;">
+        <%= render :file => '/lexicon_terms/lexicon_list.html.erb' %>
+        <!--<p>MyLexicon1</p>
+        <p>MyLexicon2</p>-->
+      </div>
+      <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+        <!--<button class="button" style="float:left" id="createLexicon">+</button>-->
+        <!--<a href="#" style="float:left" id="createLexicon" ><img src="/images/icons/Doc-Add.png" alt="Create Lexicon"></a>-->
+        <a href="#" style="float:left" id="createLexicon" ><img src="/images/icons_transparent/Add_Doc24x24.png" alt="Create Lexicon" title="Create Lexicon"/></a>
+        <!--<button class="button" style="float:left" id="deleteLexicon">-</button>-->
+        <!--<a href="#" style="float:left" id="deleteLexicon" ><img src="/images/icons/Doc-Delete.png" alt="Delete Lexicon"></a>-->
+        <a href="#" style="float:left" id="deleteLexicon" ><img src="/images/icons_transparent/Delete_Doc24x24.png" alt="Delete Lexicon" title="Delete Lexicon"/></a>
+        <div id="deleteLexiconMessage" style="display:none; background-color:#E2E4E5">
+          <span style="font-size:small">Are you sure you want to delete this lexicon?</span>
+          <br/><br/>
+          <!--
+          <a id="confirmDeleteLexicon" href="#"><img src="/images/button_delete.gif" alt="Delete"></a>
+          <a id="cancelDeleteLexicon" href="#"><img src="/images/button_cancel.gif" alt="Cancel"></a>
+          -->
+          <button class="button" style="margin:0px auto;" id="confirmDeleteLexicon">Delete</button>
+          <button class="button" style="margin:0px auto;" id="cancelDeleteLexicon">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /#tab3 -->
+

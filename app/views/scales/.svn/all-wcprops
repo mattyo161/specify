@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/scales
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/scales/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/scales/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/scales/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/scales/show.html.erb
+END
+_scale.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/scales/_scale.erb
+END

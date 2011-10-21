@@ -1,0 +1,97 @@
+10
+
+dir
+528
+https://visitor@imaging.fsm.northwestern.edu:8443/svn/AIMES/Trunk/aim_template_manager-1.0.0/app/views
+https://visitor@imaging.fsm.northwestern.edu:8443/svn/AIMES
+
+
+
+2010-12-29T02:14:12.272245Z
+391
+dannyko@stanford.edu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2ccfe950-8f50-4511-85e5-68ed0ace5302
+
+inferences
+dir
+
+imaging_observation_characteristics
+dir
+
+calculations
+dir
+
+anatomic_entity_characteristics
+dir
+
+main
+dir
+
+aim_templates
+dir
+
+components
+dir
+
+anatomic_entities
+dir
+
+layouts
+dir
+
+template_containers
+dir
+
+non_quantifiables
+dir
+
+allowed_terms
+dir
+
+users
+dir
+
+numericals
+dir
+
+ordinal_levels
+dir
+
+user_sessions
+dir
+
+quantiles
+dir
+
+intervals
+dir
+
+imaging_observations
+dir
+
+characteristic_quantifications
+dir
+
+scales
+dir
+
+template_stores
+dir
+
+lexicon_terms
+dir
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/initializers/session_store.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/initializers/backtrace_silencers.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/config/initializers/mime_types.rb
+END

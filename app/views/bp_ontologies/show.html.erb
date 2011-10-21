@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @bp_ontology.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @bp_ontology.description %>
+</p>
+
+<p>
+  <b>Abbreviation:</b>
+  <%=h @bp_ontology.abbreviation %>
+</p>
+
+<p>
+  <b>Versionid:</b>
+  <%=h @bp_ontology.versionid %>
+</p>
+
+<p>
+  <b>Ontologyid:</b>
+  <%=h @bp_ontology.ontologyid %>
+</p>
+
+
+<%= link_to 'Edit', edit_bp_ontology_path(@bp_ontology) %> |
+<%= link_to 'Back', bp_ontologies_path %>

@@ -1,0 +1,6 @@
+<input name="query" type="text" style="width:100%; font-size:small"/>
+<!--<button class="button" type="submit" style="float:right; width:80px; height:25px;"><span class="radio_options_text">Search</span></button>-->
+<select name="lexicon_list" id="<%= element.to_s %>_lexicon_list" size="5" multiple="multiple" style="font-size:small; width:100%" >
+  <%= LexiconTerm.all.map { |lt| lt.lexiconName }.uniq.inject('') { |s, lt| s += to_tags(lt, 'option') }
+%>
+</select>

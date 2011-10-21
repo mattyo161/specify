@@ -1,0 +1,17 @@
+<div style="float:right">
+  <img id="addOrdinalLevel<%= scale.id.to_s if scale!=nil %>" class="addOrdinalLevelTableRow" src="/images/icons_transparent/Add_transparent24x24.png" alt="Add ordinal level table row" title="Add ordinal level table row"/>
+  <img class="deleteOrdinalLevelTableRow" src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete ordinal level table row" title="Delete ordinal level table row"/>
+</div>
+<br />
+
+<table class="tablesorter ordinalLevelTable">
+  <thead>
+  <th></th>
+  <th style="width:70%">Description</th>
+  <th style="width:30%">Integer Value</th>
+  </thead>
+
+  <tbody>
+	<%= render :partial => '/ordinal_levels/ordinal_level', :collection => scale.ordinal_levels if scale != nil %>
+  </tbody>
+</table>

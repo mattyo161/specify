@@ -1,0 +1,44 @@
+<% # @template_container.class 
+%>
+<% if @template_container == nil %>
+  <h1><%= TemplateContainer.all.any? ? 'Select an AIM Template Group to view (left panel)' : 'No AIM Template Groups available' %></h1>
+<% end  %>
+<% if @template_container %>
+  <h1>template group: <%= @template_container.name if @template_container.name %></h1>
+  <table border="1" style="border-spacing:0">
+    <thead>
+      <%= table_header(@template_container, 'style="padding:4px;"') %>
+    </thead>
+    <tbody>
+      <%= render :file => '/template_containers/show.html.erb' %>
+    </tbody>
+  </table>
+<% end %>
+<!-- <table class="tablesorter" id="templateGroupsTable"> -->
+<!--Included AIM Templates-->
+<% if @template_container %>
+  <% if @template_container.aim_templates.any? %>
+    <h2>included templates</h2>
+    <table class="tablesorter" id="includedTemplates">
+      <% if @template_container %>
+        <thead>
+          <tr>
+            <%= table_header(AimTemplate.last) %>
+            <!--		<th></th>
+          <th></th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <%= render :partial => '/main/aim_template', :collection => @template_container.aim_templates
+        %>
+        </tbody>
+      <% end %>
+    </table>
+  <% end %>
+<% end %>
+<% # if @template_container
+%>
+<%#   render :partial => '/aim_templates/available_templates', :collection => current_user.aim_templates if current_user.aim_templates.any?
+%>
+<% # end
+%>

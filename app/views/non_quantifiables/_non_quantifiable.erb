@@ -1,0 +1,9 @@
+<% if !non_quantifiable.blank? %>
+  <tr class='non_quantifiables' id='non_quantifiable<%= non_quantifiable.id.to_s %>' name='element'>
+	<td><input type='checkbox'/></td>
+    <td class='codeMeaning editableText' title='<%= non_quantifiable.codeMeaning %>' ><%= non_quantifiable.codeMeaning %></td>
+    <td class='codeValue editableText' title='<%= non_quantifiable.codeValue %>' ><%= non_quantifiable.codeValue %></td>
+    <td class='codingSchemeDesignator editableText' title='<%= non_quantifiable.codingSchemeDesignator %>' ><%= non_quantifiable.codingSchemeDesignator %></td>
+    <td class='codingSchemeVersion editableText' title='<%= non_quantifiable.codingSchemeVersion %>'><%= non_quantifiable.codingSchemeVersion %></td>
+  </tr>
+<% end %>

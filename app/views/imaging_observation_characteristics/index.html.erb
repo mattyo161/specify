@@ -1,0 +1,34 @@
+<h1>Listing imaging_observation_characteristics</h1>
+
+<table>
+  <tr>
+    <th>Label</th>
+    <th>Mincardinality</th>
+    <th>Maxcardinality</th>
+    <th>Itemnumber</th>
+    <th>Shoulddisplay</th>
+    <th>Explanatorytext</th>
+    <th>Authors</th>
+    <th>Annotatorconfidence</th>
+  </tr>
+
+<% @imaging_observation_characteristics.each do |imaging_observation_characteristic| %>
+  <tr>
+    <td><%=h imaging_observation_characteristic.label %></td>
+    <td><%=h imaging_observation_characteristic.minCardinality %></td>
+    <td><%=h imaging_observation_characteristic.maxCardinality %></td>
+    <td><%=h imaging_observation_characteristic.itemNumber %></td>
+    <td><%=h imaging_observation_characteristic.shouldDisplay %></td>
+    <td><%=h imaging_observation_characteristic.explanatoryText %></td>
+    <td><%=h imaging_observation_characteristic.authors %></td>
+    <td><%=h imaging_observation_characteristic.annotatorConfidence %></td>
+    <td><%= link_to 'Show', imaging_observation_characteristic %></td>
+    <td><%= link_to 'Edit', edit_imaging_observation_characteristic_path(imaging_observation_characteristic) %></td>
+    <td><%= link_to 'Destroy', imaging_observation_characteristic, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New imaging_observation_characteristic', new_imaging_observation_characteristic_path %>

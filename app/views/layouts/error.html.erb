@@ -1,0 +1,9 @@
+<% unless @error.blank? %>
+  <!-- <p style="color: green"><% #  flash[:notice]
+  %></p> -->
+  <script type="text/javascript">
+    alert('<%= @error %> <%= ': ' + escape_javascript(@x.to_s) unless @x.blank? %>') ;
+    window.location.href = '/'
+    // window.location.hash = ''
+  </script>
+<% end %>

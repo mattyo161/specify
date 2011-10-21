@@ -1,0 +1,96 @@
+<div id="tab1" class="tab ui-tabs-hide">
+  <div class="ui-layout-north ui-widget">
+    <div class="toolbar ui-widget-content ui-state-active">
+    </div>
+  </div>
+  <div class="ui-layout-south ui-widget">
+    <div class="toolbar ui-widget-content ui-state-default">
+    </div>
+  </div>
+  <div class="ui-layout-west">
+    <div class="ui-layout-center">
+      <div class="ui-widget-header ui-corner-top">Group Name</div>
+      <div class="ui-widget-content" id="templateContainerList" style="background-image:url('/images/AIM_logo_15.png'); background-repeat:no-repeat">
+        <%= render :file => '/main/template_group_list.html.erb' %>
+      </div>
+      <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+        <table style="margin: 0; padding: 0;">
+          <tr>
+            <td>
+              <div id="addTemplateContainer"><img src="/images/icons_transparent/Add_Doc24x24.png" alt="Add Template Container" title="Add Template Container"/></div>
+            </td>
+            <td>
+              <div id="deleteTemplateContainer" ><img src="/images/icons_transparent/Delete_Doc24x24.png" alt="Delete Template Container" title="Delete Template Container"/></div>
+            </td>
+            <td>
+              <div id="copyTemplateContainer" ><img src="/images/icons_transparent/Copy_Transparent24x24.png" alt="Copy Template Container" title="Copy Template Container"/></div>
+            </td>
+            <td>
+              <div id="downloadTemplateContainer"><img src="/images/icons_transparent/Download_transparent24x24.png" alt="Download Template Container" title="Download Template Container"/></div>
+            </td>
+            <td>
+              <div id="uploadTemplateContainer"><img src="/images/icons_transparent/Upload_transparent24x24.png" alt="Upload Template Container" title="Upload Template Container"/></div>
+            </td>
+            <td>
+              <div id="editTemplateContainer"><img src="/images/icons_transparent/Edit.png" width="24px" height="24px" alt="Edit Template Container" title="Edit Template Container"/></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="addTemplateContainerMessage" style="display:none; background-color:#E2E4E5">
+        <%= render :partial => '/template_containers/form.erb', :collection => [TemplateContainer.new] %>
+      </div>
+      <div id="deleteTemplateContainerMessage" style="display:none; background-color:#E2E4E5">
+        <span style="font-size:small">Are you sure you want to delete this AIM Template Group?</span>
+        <br/><br/>
+        <button class="button" style="margin:0px auto;" id="confirmDeleteTemplateContainer">Delete</button>
+        <button class="button" style="margin:0px auto;" id="cancelDeleteTemplateContainer">Cancel</button>
+      </div>
+      <div id="templateContainerUploadForm" style="display:none">
+        <% form_tag({:action => "upload", :controller => "main"}, :multipart => true, :id=>"uploadTemplateContainerForm", :class=>"ajaxForm") do %>
+          <%= file_field_tag :uploaded_data # , :html => {:style => 'visibility:hidden'}
+          %>
+          <%= submit_tag 'Upload' %>
+        <% end %>
+        <button class="button" id="cancelUploadingTemplateContainer">Cancel</button>
+      </div>
+      <div id="editTemplateContainerForm" style="display:none; background-color:#E2E4E5">
+      </div>
+    </div>
+  </div>
+  <div class="ui-layout-center">
+    <div class="ui-widget-header ui-corner-top">
+      Group Members
+    </div>
+    <div class="ui-widget-content" style="padding:0px" id="templateGroupTableDiv">
+      <%= render :file => '/main/template_group_table.html.erb'  %>
+    </div>
+    <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+      <!--<button class="button" style="float:left" id="removeIncludedTemplates">Remove</button>-->
+      <!--<a href="#" style="float:left" id="removeIncludedTemplates" ><img src="/images/icons/Delete.png" alt="Remove Included Template"/></a>-->
+      <a href="#" style="float:left" id="removeIncludedTemplates" ><img src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Remove Included Template" title="Remove Included Template"/></a>
+    </div>
+  </div>
+  <div class="ui-layout-east">
+    <div class="ui-layout-center">
+      <div class="ui-widget-header ui-corner-top">
+        Group Memberships
+      </div>
+      <div class="ui-widget-content" style="padding:0px">
+        <% form_tag '#', :id => :availableTemplatesForm do %>
+          <table id="availableTemplates" style="width:100%">
+            <tbody id="availableTemplatesTableBody">
+              <%= render :file => '/template_containers/included_templates.html.erb' %>
+            </tbody>
+          </table>
+        <% end %>
+      </div>
+      <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+        <!--<button class="button" style="float:left" id="includeSelectedTemplates">Add</button>-->
+        <!--<a href="#" style="float:left" id="includeSelectedTemplates" ><img src="/images/icons/Add.png" alt="Include Selected Template"/></a>-->
+        <!-- <div id="includeSelectedTemplates"><img src="/images/icons_transparent/Add_transparent24x24.png" alt="Include Selected Template" title="Include Selected Template"></div> -->
+        <div id="includeSelectedTemplates"><img src="/images/icons_transparent/Add_Delete24x24.png" alt="Include Selected Template" title="Include Selected Template"/></div>
+      </div>
+    </div>
+  </div>
+</div><!-- /#tab1 -->

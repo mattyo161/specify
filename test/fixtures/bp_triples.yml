@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  domain: 1
+  property: MyString
+  range: 
+
+two:
+  domain: 1
+  property: MyString
+  range: 

@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  label: MyString
+  minCardinality: 1
+  maxCardinality: 1
+  itemNumber: 1
+  shouldDisplay: false
+  explanatoryText: MyText
+  authors: MyString
+  annotatorConfidence: false
+
+two:
+  label: MyString
+  minCardinality: 1
+  maxCardinality: 1
+  itemNumber: 1
+  shouldDisplay: false
+  explanatoryText: MyText
+  authors: MyString
+  annotatorConfidence: false

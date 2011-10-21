@@ -1,0 +1,67 @@
+<% form_for(@template_container, :html => {:id => 'edit_template_container', :class => 'ajaxForm'}) do |f| %>
+  <%= f.error_messages %>
+<table style="text-align:left; font-size:small; margin-left: auto; margin-right: auto; padding:0; margin:0">
+	<tbody>
+  <tr><td>
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => '30' %>
+  </td></tr>
+  <tr><td>
+    <%= f.label :version %><br />
+    <%= f.text_field :version, :size => '30' %>
+  </td></tr>
+  <tr><td>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :style => "width:200px", :rows => "5", :cols => "60" %>
+  </td></tr>
+  <tr><td>
+    <%= f.label :authors %><br />
+    <%= f.text_field :authors, :size => 30 %>
+  </td></tr>
+  <tr><td>
+    <%= f.label :creationDate %><br />
+    <%= f.date_select :creationDate, :order => [:year, :month, :day], :disabled => 'true', :value => Date.today.strftime('%Y-%m-%d') %>
+  </td></tr>
+<!--  <tr><td>
+    <% # f.submit 'Update' 
+     %>
+  </td></tr> -->
+	</tbody>
+</table>
+<% end %>
+<table style="width:100%; text-align:center; font-size:small; margin-left: auto; margin-right: auto; padding:0; margin:0">
+	<tbody>
+  <tr><td style="text-align:center">
+		<button class="button" id="doneEditingTemplateContainer">Done</button>
+		<button class="button" id="cancelEditingTemplateContainer">Cancel</button>
+  </td></tr>
+	</tbody>
+</table>
+
+
+<!--	  <tr><td>
+		Name*<br/>
+		<input id="name" type="text" size="30">
+	  </td></tr>
+	  <tr><td>
+		Version*<br />
+		<input id="version" type="text" size="30">
+	  </td></tr>
+	 <tr><td>
+		Description*<br />
+		<textarea id="description" style="width:200px" rows="5" cols="60"></textarea>
+	  </td></tr>
+	  <tr><td>
+		Authors<br />
+		<input id="authors" type="text" size="30">
+	  </td></tr>
+	  <tr><td>
+		Date Created<br />
+		<input id="dateCreated" type="text" size="30">
+	  </td></tr>
+	  <tr><td>
+	  <tr><td style="text-align:center">
+		<button class="button" id="doneEditingTemplateContainer">Done</button>
+		<button class="button" id="cancelEditingTemplateContainer">Cancel</button>
+	  </td></tr>
+-->

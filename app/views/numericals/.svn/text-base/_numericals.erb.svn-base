@@ -1,0 +1,19 @@
+<div class="quant_type3 centertable"  >
+  <div style="float:right">
+    <img id="addNumerical<%= characteristic_quantification.id.to_s %>" class="addNumericalTableRow" src="/images/icons_transparent/Add_transparent24x24.png" alt="Add numerical table row" title="Add numerical table row"/>
+    <img class="deleteNumericalTableRow" src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete numerical table row" title="Delete numerical table row"/>
+  </div>
+  <br />
+  <table class="tablesorter numericalTable" >
+    <thead>
+      <tr>
+        <%= to_tags(['','operator','value','ucumString' ].map { |f| f.titleize }) %>
+      </tr>
+    </thead>
+    <tbody>
+      <% #  numericals.map { |at| at.codeMeaning }.to_s
+      %>
+      <%= render :partial => '/numericals/numerical', :collection => numericals if numericals.any? %>
+    </tbody>
+  </table>
+</div>

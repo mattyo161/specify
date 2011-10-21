@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures
+END
+anatomic_entities.yml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures/anatomic_entities.yml
+END
+imaging_observation_characteristics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures/imaging_observation_characteristics.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures/users.yml
+END
+anatomic_entity_characteristics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures/anatomic_entity_characteristics.yml
+END
+imaging_observations.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures/imaging_observations.yml
+END
+template_stores.yml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures/template_stores.yml
+END
+templates.yml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/fixtures/templates.yml
+END

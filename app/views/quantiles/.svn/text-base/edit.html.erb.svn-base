@@ -1,0 +1,20 @@
+<h1>Editing quantile</h1>
+
+<% form_for(@quantile) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bin %><br />
+    <%= f.text_field :bin %>
+  </p>
+  <p>
+    <%= f.label :characteristic_quantification_id %><br />
+    <%= f.text_field :characteristic_quantification_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @quantile %> |
+<%= link_to 'Back', quantiles_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bp_ontology_id: 1
+  name: MyString
+  bpid: MyString
+  domain: 1
+  range: 1
+
+two:
+  bp_ontology_id: 1
+  name: MyString
+  bpid: MyString
+  domain: 1
+  range: 1

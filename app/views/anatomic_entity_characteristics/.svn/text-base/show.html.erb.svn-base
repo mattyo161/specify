@@ -1,0 +1,43 @@
+<p>
+  <b>Label:</b>
+  <%=h @anatomic_entity_characteristic.label %>
+</p>
+
+<p>
+  <b>Mincardinality:</b>
+  <%=h @anatomic_entity_characteristic.minCardinality %>
+</p>
+
+<p>
+  <b>Maxcardinality:</b>
+  <%=h @anatomic_entity_characteristic.maxCardinality %>
+</p>
+
+<p>
+  <b>Itemnumber:</b>
+  <%=h @anatomic_entity_characteristic.itemNumber %>
+</p>
+
+<p>
+  <b>Shoulddisplay:</b>
+  <%=h @anatomic_entity_characteristic.shouldDisplay %>
+</p>
+
+<p>
+  <b>Explanatorytext:</b>
+  <%=h @anatomic_entity_characteristic.explanatoryText %>
+</p>
+
+<p>
+  <b>Authors:</b>
+  <%=h @anatomic_entity_characteristic.authors %>
+</p>
+
+<p>
+  <b>Annotatorconfidence:</b>
+  <%=h @anatomic_entity_characteristic.annotatorConfidence %>
+</p>
+
+
+<%= link_to 'Edit', edit_anatomic_entity_characteristic_path(@anatomic_entity_characteristic) %> |
+<%= link_to 'Back', anatomic_entity_characteristics_path %>

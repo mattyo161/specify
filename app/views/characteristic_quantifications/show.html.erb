@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @characteristic_quantification.name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @characteristic_quantification.type %>
+</p>
+
+<p>
+  <b>Allowed term:</b>
+  <%=h @characteristic_quantification.allowed_term_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_characteristic_quantification_path(@characteristic_quantification) %> |
+<%= link_to 'Back', characteristic_quantifications_path %>

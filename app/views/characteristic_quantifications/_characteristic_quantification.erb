@@ -1,0 +1,52 @@
+<% #  CharacteristicQuantification.types.inject('') { |str, thing| str += render(:partial => thing + '/' + thing.singularize, :collection => characteristic_quantification.send(thing)) }
+%>
+<% if characteristic_quantification %>
+<!--<div id="addQuantificationMessage">-->
+<div class="quantTitle" style="height:25px; width:100%; text-align:center; display:none; background-color:#606A71; font-family:arial,sans-serif; font-weight:bold; font-size:16px;">Quantification</div>
+<div class="characteristic_quantifications" name='element' id='characteristicQuantification<%= characteristic_quantification.id.to_s %>' style="width:100%;text-align:center">
+	<div style="float:right">
+	  <img id="deleteQuantification<%= characteristic_quantification.id.to_s %>" class="deleteQuantification" src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete Characteristic Quantification" title="Delete Characteristic Quantification"/>
+	</div>
+  <!-- <span> Name : </span><input type="text" size="30" value='<%= characteristic_quantification.name %>'/> -->
+	<div class="centertable">
+	  <table><tbody><tr>
+	  <td>Name :</td><td class='name editableText' style='width:50px; border-width:1px; border-style:solid; border-color:#CDCDCD'><%= characteristic_quantification.name %></td>
+	  </tr></tbody></table>
+	</div>
+  <br/>
+  <input type="checkbox" id='quant_confidence<%= characteristic_quantification.id.to_s %>' class="annotatorConfidence" <%= 'checked=\'checked\'' if characteristic_quantification.annotatorConfidence %> />
+  <label for='quant_confidence<%= characteristic_quantification.id.to_s %>' >Annotator Confidence</label>
+  <br/><br/>
+    <div>
+	  <b>Non-quantifiables</b>
+    </div>
+  <%# if characteristic_quantification.non_quantifiables.any? %>
+    <%= render :partial => '/non_quantifiables/non_quantifiables', :locals => {:non_quantifiables => characteristic_quantification.non_quantifiables, :characteristic_quantification => characteristic_quantification } %>
+  <%# end %>
+  <br/>
+  <input value="<%= !characteristic_quantification.quantification_type.blank? && !characteristic_quantification.send(characteristic_quantification.quantification_type).blank? ? '1' : '0' %>" name="<%= characteristic_quantification.id.to_s %>" type="checkbox" class="has_quantifiables" id="quant_check<%= characteristic_quantification.id.to_s %>" <%= 'checked=\'checked\'' if characteristic_quantification.quantification_type != nil %> />
+  <label for="quant_check<%= characteristic_quantification.id.to_s %>" class="checkbox"><b>Quantifiables</b></label>
+  <div class="quantifiable_info" <%= 'style=\'display:none\'' if characteristic_quantification.quantification_type == nil %> >
+		<!-- 3:scale; 2:quantile; 1:intervals; 0:numericals; -->
+		<input type="radio" name="quant_type<%= session[:ctr] %>" class="quant_type1" id="quantile_<%= characteristic_quantification.id.to_s %>" value="<%= CharacteristicQuantification.types[2]%>"  <%= 'checked' if characteristic_quantification.quantification_type == CharacteristicQuantification.types[2] %> ><label for="quantile_<%= characteristic_quantification.id.to_s %>">Quantile</label></input>
+		<input type="radio" name="quant_type<%= session[:ctr] %>" class="quant_type2" id="interval_<%= characteristic_quantification.id.to_s %>" value="<%= CharacteristicQuantification.types[1]%>"  <%= 'checked' if characteristic_quantification.quantification_type == CharacteristicQuantification.types[1]  %> ><label for="interval_<%= characteristic_quantification.id.to_s %>">Interval</label></input>
+		<input type="radio" name="quant_type<%= session[:ctr] %>" class="quant_type3" id="numerical_<%= characteristic_quantification.id.to_s %>" value="<%= CharacteristicQuantification.types[0]%>" <%= 'checked' if characteristic_quantification.quantification_type == CharacteristicQuantification.types[0] %> ><label for="numerical_<%= characteristic_quantification.id.to_s %>">Numerical</label></input>
+		<input type="radio" name="quant_type<%= session[:ctr] %>" class="quant_type4" id="scale_<%= characteristic_quantification.id.to_s %>" value="<%= CharacteristicQuantification.types[3]%>"     <%= 'checked' if characteristic_quantification.quantification_type == CharacteristicQuantification.types[3] %> ><label for="scale_<%= characteristic_quantification.id.to_s %>">Scale</label></input>
+		<% session[:ctr] = session[:ctr] + 1 %>
+		<br /><br />
+		<%= render(:partial => characteristic_quantification.quantification_type.pluralize + '/' + characteristic_quantification.quantification_type, :locals => { characteristic_quantification.quantification_type.to_sym => characteristic_quantification.send(characteristic_quantification.quantification_type), :characteristic_quantification => characteristic_quantification }) if characteristic_quantification.quantification_type
+		%>
+		<%  #= render(:partial => characteristic_quantification.quantification_type.pluralize + '/' + characteristic_quantification.quantification_type, :collection => [characteristic_quantification.send(characteristic_quantification.quantification_type)])
+		%>
+  </div>
+</div>
+<% end %>
+
+<%  #= render(:partial => '/quantiles/quantile', :locals => {:quantile => characteristic_quantification.quantile })
+%>
+<% # = render(:partial => '/intervals/intervals', :locals => {:intervals => characteristic_quantification.intervals })
+%>
+<% # = render(:partial => '/numericals/numericals', :locals => {:numericals => characteristic_quantification.numericals })
+%>
+<% # = render(:partial => '/scales/scale', :locals => {:scale => characteristic_quantification.scale })
+%>

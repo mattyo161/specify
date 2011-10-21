@@ -1,0 +1,43 @@
+<p>
+  <b>Label:</b>
+  <%=h @component.label %>
+</p>
+
+<p>
+  <b>Mincardinality:</b>
+  <%=h @component.minCardinality %>
+</p>
+
+<p>
+  <b>Maxcardinality:</b>
+  <%=h @component.maxCardinality %>
+</p>
+
+<p>
+  <b>Itemnumber:</b>
+  <%=h @component.itemNumber %>
+</p>
+
+<p>
+  <b>Shoulddisplay:</b>
+  <%=h @component.shouldDisplay %>
+</p>
+
+<p>
+  <b>Explanatorytext:</b>
+  <%=h @component.explanatoryText %>
+</p>
+
+<p>
+  <b>Authors:</b>
+  <%=h @component.authors %>
+</p>
+
+<p>
+  <b>Aim template:</b>
+  <%=h @component.aim_template_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_component_path(@component) %> |
+<%= link_to 'Back', components_path %>

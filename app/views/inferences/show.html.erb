@@ -1,0 +1,13 @@
+<p>
+  <b>Annotatorconfidence:</b>
+  <%=h @inference.annotatorConfidence %>
+</p>
+
+<p>
+  <b>Component:</b>
+  <%=h @inference.component_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_inference_path(@inference) %> |
+<%= link_to 'Back', inferences_path %>

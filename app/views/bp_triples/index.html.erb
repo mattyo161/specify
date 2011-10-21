@@ -1,0 +1,24 @@
+<h1>Listing bp_triples</h1>
+
+<table>
+  <tr>
+    <th>Domain</th>
+    <th>Property</th>
+    <th>Range</th>
+  </tr>
+
+<% @bp_triples.each do |bp_triple| %>
+  <tr>
+    <td><%=h bp_triple.domain %></td>
+    <td><%=h bp_triple.property %></td>
+    <td><%=h bp_triple.range %></td>
+    <td><%= link_to 'Show', bp_triple %></td>
+    <td><%= link_to 'Edit', edit_bp_triple_path(bp_triple) %></td>
+    <td><%= link_to 'Destroy', bp_triple, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bp_triple', new_bp_triple_path %>

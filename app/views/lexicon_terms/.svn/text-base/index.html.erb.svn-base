@@ -1,0 +1,28 @@
+<h1>Listing lexicon_terms</h1>
+
+<table>
+  <tr>
+    <th>Codemeaning</th>
+    <th>Codevalue</th>
+    <th>Codingschemedesignator</th>
+    <th>Description</th>
+    <th>Lexicon term</th>
+  </tr>
+
+<% @lexicon_terms.each do |lexicon_term| %>
+  <tr>
+    <td><%=h lexicon_term.codeMeaning %></td>
+    <td><%=h lexicon_term.codeValue %></td>
+    <td><%=h lexicon_term.codingSchemeDesignator %></td>
+    <td><%=h lexicon_term.description %></td>
+    <td><%=h lexicon_term.lexicon_term_id %></td>
+    <td><%= link_to 'Show', lexicon_term %></td>
+    <td><%= link_to 'Edit', edit_lexicon_term_path(lexicon_term) %></td>
+    <td><%= link_to 'Destroy', lexicon_term, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New lexicon_term', new_lexicon_term_path %>

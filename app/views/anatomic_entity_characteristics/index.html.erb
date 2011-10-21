@@ -1,0 +1,34 @@
+<h1>Listing anatomic_entity_characteristics</h1>
+
+<table>
+  <tr>
+    <th>Label</th>
+    <th>Mincardinality</th>
+    <th>Maxcardinality</th>
+    <th>Itemnumber</th>
+    <th>Shoulddisplay</th>
+    <th>Explanatorytext</th>
+    <th>Authors</th>
+    <th>Annotatorconfidence</th>
+  </tr>
+
+<% @anatomic_entity_characteristics.each do |anatomic_entity_characteristic| %>
+  <tr>
+    <td><%=h anatomic_entity_characteristic.label %></td>
+    <td><%=h anatomic_entity_characteristic.minCardinality %></td>
+    <td><%=h anatomic_entity_characteristic.maxCardinality %></td>
+    <td><%=h anatomic_entity_characteristic.itemNumber %></td>
+    <td><%=h anatomic_entity_characteristic.shouldDisplay %></td>
+    <td><%=h anatomic_entity_characteristic.explanatoryText %></td>
+    <td><%=h anatomic_entity_characteristic.authors %></td>
+    <td><%=h anatomic_entity_characteristic.annotatorConfidence %></td>
+    <td><%= link_to 'Show', anatomic_entity_characteristic %></td>
+    <td><%= link_to 'Edit', edit_anatomic_entity_characteristic_path(anatomic_entity_characteristic) %></td>
+    <td><%= link_to 'Destroy', anatomic_entity_characteristic, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New anatomic_entity_characteristic', new_anatomic_entity_characteristic_path %>

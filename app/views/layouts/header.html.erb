@@ -1,0 +1,40 @@
+<!--        <div id="outer-north" style="width:100%; background-color:#121D26; left:0px; right:0px" > -->
+<%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
+<table style="float:right;">
+  <tbody>
+    <tr>
+      <td class="logo" style="padding:0px">
+        <img src="/images/AIM-WebLogoBar.png" style="float:right;" height="68px" width="169px" alt="AIM Logo" title="AIM Logo"/>
+        <!--<img src="/images/NU_Stanford_logos/NU_logo_30h.png" style="float:right;" alt="northwestern" />-->
+        <!--<img src="/images/NU_Stanford_logos/stanford_logo_all_30h.png" style="float:right;" alt="stanford" />-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<span class="topper" style="white-space:nowrap">
+  <b style="font-family:arial,sans-serif; color:#91999D; font-size:12px">Annotation and Image Markup (AIM)</b>
+</span>
+<br/>
+<!--			<div style="float:right;">-->&nbsp;&nbsp;&nbsp;&nbsp;
+<div id="header-nav">
+<span style="white-space:nowrap">
+<div id="account_login">
+  <% if !current_user %>
+    <%= link_to "Request an account", new_account_path %> |
+    <%= link_to "Log in", new_user_session_path %> 
+    <! -- | -->
+    <% #  link_to "Forgot Password", '/users/reset'
+     %>
+  <% else %>
+	<span class="user">Current user: <%=  current_user.login %></span> |
+    <%= link_to "Edit Account", account_path %>
+     |
+    <%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
+  <% end %>
+</div>
+</span>
+</div>
+<!--	</div> -->
+
+<!--        </div> -->
+

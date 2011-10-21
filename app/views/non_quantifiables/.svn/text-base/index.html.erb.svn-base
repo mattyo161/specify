@@ -1,0 +1,28 @@
+<h1>Listing non_quantifiables</h1>
+
+<table>
+  <tr>
+    <th>Codemeaning</th>
+    <th>Codevalue</th>
+    <th>Codingschemedesignator</th>
+    <th>Codingschemeversion</th>
+    <th>Characteristic quantification</th>
+  </tr>
+
+<% @non_quantifiables.each do |non_quantifiable| %>
+  <tr>
+    <td><%=h non_quantifiable.codeMeaning %></td>
+    <td><%=h non_quantifiable.codeValue %></td>
+    <td><%=h non_quantifiable.codingSchemeDesignator %></td>
+    <td><%=h non_quantifiable.codingSchemeVersion %></td>
+    <td><%=h non_quantifiable.characteristic_quantification_id %></td>
+    <td><%= link_to 'Show', non_quantifiable %></td>
+    <td><%= link_to 'Edit', edit_non_quantifiable_path(non_quantifiable) %></td>
+    <td><%= link_to 'Destroy', non_quantifiable, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New non_quantifiable', new_non_quantifiable_path %>

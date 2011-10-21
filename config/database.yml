@@ -1,0 +1,31 @@
+# MySQL.  Versions 4.1 and 5.0 are recommended.
+#
+#
+# Be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+development:
+  adapter: jdbcmysql
+  encoding: utf8
+  # driver: com.mysql.jdbc.Driver
+  # url: jdbc:mysql://localhost/template_editor
+  username: aim
+  password: aim
+  url: jdbc:mysql://localhost:3306/template_editor
+test:
+  # host:localhost
+  adapter: jdbcmysql
+  encoding: utf8
+  # driver: com.mysql.jdbc.Driver
+  # url: jdbc:mysql://localhost/template_editor
+  username: aim
+  password: aim
+  url: jdbc:mysql://localhost:3306/template_editor
+production:
+  # host:localhost
+  adapter: jdbcmysql
+  encoding: utf8
+  # driver: com.mysql.jdbc.Driver
+  # url: jdbc:mysql://localhost/template_editor
+  username: aim
+  password: aim
+  url: jdbc:mysql://localhost:3306/template_editor

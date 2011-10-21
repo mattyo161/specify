@@ -1,0 +1,6 @@
+//alert('aim template copy1');
+$("#availableTemplatesTableBody").html("<%= escape_javascript(render :partial => '/aim_templates/available_templates/', :collection => current_user.aim_templates) %>") ;
+$("#templateList").html("<%= escape_javascript(render :file => '/main/template_list.html.erb') %>") ;
+$("#AimTemplate"+selectedTemplateId).click();
+//alert('aim template copy2');
+

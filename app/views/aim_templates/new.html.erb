@@ -1,0 +1,51 @@
+<h1>New aim_template</h1>
+
+<% form_for(@aim_template) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :uid %><br />
+    <%= f.text_field :uid %>
+  </p>
+  <p>
+    <%= f.label :codeValue %><br />
+    <%= f.text_field :codeValue %>
+  </p>
+  <p>
+    <%= f.label :codeMeaning %><br />
+    <%= f.text_field :codeMeaning %>
+  </p>
+  <p>
+    <%= f.label :codingSchemeDesignator %><br />
+    <%= f.text_field :codingSchemeDesignator %>
+  </p>
+  <p>
+    <%= f.label :codingSchemeVersion %><br />
+    <%= f.text_field :codingSchemeVersion %>
+  </p>
+  <p>
+    <%= f.label :authors %><br />
+    <%= f.text_field :authors %>
+  </p>
+  <p>
+    <%= f.label :creationDate %><br />
+    <%= f.date_select :creationDate, :order => [:year, :month, :day], :value => Date.today.strftime('%Y-%m-%d') %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', aim_templates_path %>

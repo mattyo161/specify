@@ -1,0 +1,43 @@
+<p>
+  <b>Label:</b>
+  <%=h @imaging_observation_characteristic.label %>
+</p>
+
+<p>
+  <b>Mincardinality:</b>
+  <%=h @imaging_observation_characteristic.minCardinality %>
+</p>
+
+<p>
+  <b>Maxcardinality:</b>
+  <%=h @imaging_observation_characteristic.maxCardinality %>
+</p>
+
+<p>
+  <b>Itemnumber:</b>
+  <%=h @imaging_observation_characteristic.itemNumber %>
+</p>
+
+<p>
+  <b>Shoulddisplay:</b>
+  <%=h @imaging_observation_characteristic.shouldDisplay %>
+</p>
+
+<p>
+  <b>Explanatorytext:</b>
+  <%=h @imaging_observation_characteristic.explanatoryText %>
+</p>
+
+<p>
+  <b>Authors:</b>
+  <%=h @imaging_observation_characteristic.authors %>
+</p>
+
+<p>
+  <b>Annotatorconfidence:</b>
+  <%=h @imaging_observation_characteristic.annotatorConfidence %>
+</p>
+
+
+<%= link_to 'Edit', edit_imaging_observation_characteristic_path(@imaging_observation_characteristic) %> |
+<%= link_to 'Back', imaging_observation_characteristics_path %>

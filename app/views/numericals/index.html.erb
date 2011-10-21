@@ -1,0 +1,26 @@
+<h1>Listing numericals</h1>
+
+<table>
+  <tr>
+    <th>Ucumstring</th>
+    <th>Value</th>
+    <th>Operator</th>
+    <th>Characteristic quantification</th>
+  </tr>
+
+<% @numericals.each do |numerical| %>
+  <tr>
+    <td><%=h numerical.ucumString %></td>
+    <td><%=h numerical.value %></td>
+    <td><%=h numerical.operator %></td>
+    <td><%=h numerical.characteristic_quantification_id %></td>
+    <td><%= link_to 'Show', numerical %></td>
+    <td><%= link_to 'Edit', edit_numerical_path(numerical) %></td>
+    <td><%= link_to 'Destroy', numerical, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New numerical', new_numerical_path %>

@@ -1,0 +1,24 @@
+<% # column_names = ['Name', 'Version', 'Description', 'Uid', 'Code Value', 'Code Meaning'] 
+%>
+<% # to_tags(column_names)
+%>
+<table cellpadding="3">
+  <thead>
+    <tr>
+      <th>Name:</th>
+      <th>Version:</th>
+      <th>Description:</th>
+      <th>Uid:</th>
+      <th>Code Value:</th>
+      <th>Code Meaning:</th>
+      <th>Coding Scheme Designator:</th>
+      <th>Coding Scheme Version:</th>
+      <th>Authors:</th>
+      <th>Creation Date:</th>
+      <th>Anatomic Entities:</th>
+      <th>Imaging Observations:</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <%= render :partial => '/aim_templates/aim_template', :collection => @templates %>
+</table>

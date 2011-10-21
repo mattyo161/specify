@@ -1,0 +1,36 @@
+<% unless lexicon_term.blank? %>
+    <tr class='lexicon_terms' name='element' id='lexiconTerm<%= lexicon_term.id.to_s %>'>
+		<td rowspan="2" style='vertical-align:text-top; text-align:center' class='expand'>
+			<img alt='' src='/images/Expanded16x16.png' class='collapseLexiconTerm'/>
+		</td>
+		<td class='codeMeaning editableText'><%= lexicon_term.codeMeaning %></td>
+		<td class='codeValue editableText'><%= lexicon_term.codeValue %></td>
+		<td class='codingSchemeDesignator editableText'><%= lexicon_term.codingSchemeDesignator %></td>
+		<td class='codingSchemeVersion editableText'><%= lexicon_term.codingSchemeVersion %></td>
+		<td class='description editableText'><%= lexicon_term.description %></td>
+		<td class='lexiconName editableText'><%= lexicon_term.lexiconName %></td>
+		<%#= wrapper(lexicon_term, lexicon_term.attribute_names, 'td')
+     %>
+	</tr>
+	<tr class='lexicon_terms' name='element' id='lexiconTermChildren<%= lexicon_term.id.to_s %>'>
+		<%# unless lexicon_term.lexicon_terms.blank? %>
+		<td colspan="7" >
+			<table class="tablesorter text child_lexicon_terms" cellpadding="10">
+				<thead>
+				  <tr class='lexiconTermChildrenTableHeader' id='lexiconTermChildrenTableHeader<%= lexicon_term.id.to_s %>'>
+					<th></th>
+					<%= table_header(LexiconTerm.new) %>
+				  </tr>
+				</thead>
+				<tbody>
+				<% if lexicon_term.lexicon_terms.blank? %>
+				<tr><td colspan="7"></td></tr>
+				<% else %>
+				<%= render :partial => '/lexicon_terms/lexicon_term', :collection => lexicon_term.lexicon_terms %>
+				<% end %>
+			    </tbody>
+			</table>
+		</td>
+		<%# end %>
+	</tr>
+<% end %>

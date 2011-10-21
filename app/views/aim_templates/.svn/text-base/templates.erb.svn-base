@@ -1,0 +1,21 @@
+<h1>
+your templates
+</h1>
+<table cellpadding="3">
+<tr>
+  <th>Name:</th>
+  <th>Version:</th>
+  <th>Description:</th>
+  <th>Uid:</th>
+  <th>Code Value:</th>
+  <th>Code Meaning:</th>
+  <th>Coding Scheme Designator:</th>
+  <th>Coding Scheme Version:</th>
+  <th>Authors:</th>
+  <th>Creation Date:</th>
+  <th>Anatomic Entities:</th>
+  <th>Imaging Observations:</th>
+  <th>Edit</th>
+</tr>
+<%= render :partial => '/templates/list', :collection => @templates %>
+</table>

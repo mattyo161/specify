@@ -1,0 +1,32 @@
+<h1>Editing non_quantifiable</h1>
+
+<% form_for(@non_quantifiable) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :codeMeaning %><br />
+    <%= f.text_field :codeMeaning %>
+  </p>
+  <p>
+    <%= f.label :codeValue %><br />
+    <%= f.text_field :codeValue %>
+  </p>
+  <p>
+    <%= f.label :codingSchemeDesignator %><br />
+    <%= f.text_field :codingSchemeDesignator %>
+  </p>
+  <p>
+    <%= f.label :codingSchemeVersion %><br />
+    <%= f.text_field :codingSchemeVersion %>
+  </p>
+  <p>
+    <%= f.label :characteristic_quantification_id %><br />
+    <%= f.text_field :characteristic_quantification_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @non_quantifiable %> |
+<%= link_to 'Back', non_quantifiables_path %>

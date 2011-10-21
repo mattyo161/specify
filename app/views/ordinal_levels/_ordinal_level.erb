@@ -1,0 +1,11 @@
+<% if ordinal_level != nil %>
+<tr class='ordinal_levels' id='ordinal_level<%= ordinal_level.id.to_s %>' name='element'>
+	<td><input type="checkbox"/></td>
+	<td class='description editableText'><%= ordinal_level.description %></td>
+	<td class='integerValue editableText'><%= ordinal_level.integerValue %></td>
+	<!--
+	<td><input type="text" width="100%" value="<%= ordinal_level.description %>"/></td>
+	<td><input type="text" value="<%= ordinal_level.integerValue %>"/></td>
+	-->
+</tr>
+<% end %>

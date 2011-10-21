@@ -1,0 +1,4 @@
+<% #   @params.to_s # @template_container.id.to_s if @template_container
+%>
+<%=  render :partial => '/aim_templates/available_templates/', :collection => current_user.aim_templates
+%>

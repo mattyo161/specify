@@ -1,0 +1,8 @@
+<div style="background-color:#C6CACD; background-image:url('/images/AIM_logo_15.png'); background-repeat:no-repeat; border-bottom:30px solid #354149; border-top:25px solid #354149; border-left:5px solid #354149; border-right:5px solid #354149; height:548px; padding-left:10px">
+<h1 style="color:#121D26">Create an Account</h1>
+<% form_for @user, :url => account_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "Create Account" %>
+<% end %>
+</div>

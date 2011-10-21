@@ -1,0 +1,34 @@
+<h1>Listing components</h1>
+
+<table>
+  <tr>
+    <th>Label</th>
+    <th>Mincardinality</th>
+    <th>Maxcardinality</th>
+    <th>Itemnumber</th>
+    <th>Shoulddisplay</th>
+    <th>Explanatorytext</th>
+    <th>Authors</th>
+    <th>Aim template</th>
+  </tr>
+
+<% @components.each do |component| %>
+  <tr>
+    <td><%=h component.label %></td>
+    <td><%=h component.minCardinality %></td>
+    <td><%=h component.maxCardinality %></td>
+    <td><%=h component.itemNumber %></td>
+    <td><%=h component.shouldDisplay %></td>
+    <td><%=h component.explanatoryText %></td>
+    <td><%=h component.authors %></td>
+    <td><%=h component.aim_template_id %></td>
+    <td><%= link_to 'Show', component %></td>
+    <td><%= link_to 'Edit', edit_component_path(component) %></td>
+    <td><%= link_to 'Destroy', component, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New component', new_component_path %>

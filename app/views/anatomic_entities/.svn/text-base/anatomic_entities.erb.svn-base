@@ -1,0 +1,9 @@
+<h1>
+your anatomic entities
+</h1>
+<table cellpadding="3">
+<tr>
+<th align="left">ID</th><th align="left">anatomic entity characteristics</th>
+</tr>
+<%= render :partial => 'anatomic_entities/anatomic_entity', :collection => @anatomic_entities %>
+</table>

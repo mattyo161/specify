@@ -1,0 +1,32 @@
+# Methods added to this helper will be available to all templates in the application.
+require 'rexml/document'
+include REXML
+module ApplicationHelper
+  @@badFields = ['id', 'created_at', 'updated_at', 'user_id', 'template_container_id', 'aim_template_id', 'lexicon_term_id']
+  def table_header(obj, txt='')
+    str = ''
+    cols = obj.attribute_names.sort - @@badFields  # Object.const_get(obj.to_s).attribute_names
+    cols.each { |column_name| str += headertxt(column_name, txt) }
+    # cols.each { |column_name| str += '<th><span style="white-space: nowrap">' + column_name.titleize + '</span></th>' }
+    str
+  end
+  def to_tags(names, tag = 'th', txt='')
+    names = names.to_a
+    names -= @@badFields
+    names.inject('') { |s, name| s += tag_text(name, tag, txt) }
+  end
+  def tag_text(name, tag, txt)
+    '<' + tag + ' ' + txt + ' >' + name + '</' + tag + '>'
+  end
+  def headertxt(column_name, txt='', tag='th')
+    '<' + tag + ' ' + txt + ' >' + column_name.titleize + '</' + tag + '>'
+  end
+  def wrapper(obj, fields, tag, attr = {})
+    attrs = attributes(attr)
+    fields -= @@badFields # ['id', 'created_at', 'updated_at', 'user_id', 'template_container_id']
+    fields.inject("") { |str, f| str += '<' + tag + attrs + '><span style="white-space: nowrap">' + obj.send(f).to_s + '</span></' + tag + '>' }
+  end
+  def attributes(hash)
+    hash.keys.inject('') { |s, key| s += key + '="' + hash[key].to_s + ' ' }
+  end
+end

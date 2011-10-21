@@ -1,0 +1,17 @@
+//alert('select lexicon1') ;
+$("#lexicontable").html("<%= escape_javascript(render :file => '/lexicon_terms/lexicon_terms.html.erb', :locals => { :lexicon_terms => @lexicon_terms } ) %>") ;
+$("#lexiconList").html("<%= escape_javascript(render :file => '/lexicon_terms/lexicon_list.html.erb') %>") ;
+
+//$('.localSearchForm').each(
+//  function( intIndex ){
+//    $(this).html("<%#= escape_javascript(render :file => '/lexicon_terms/local_search.html.erb')%>") ;
+//  //alert(intIndex);
+//  }
+//) ;
+
+
+$('.localSearchForm').has('#templates_lexicon_list').html("<%= escape_javascript(render(:file => '/lexicon_terms/local_search.html.erb', :locals => {:element => 'templates'}))%>");
+$('.localSearchForm').has('#lexicons_lexicon_list').html("<%= escape_javascript(render(:file => '/lexicon_terms/local_search.html.erb', :locals => {:element => 'lexicons'}))%>");
+
+$.unblockUI();
+//alert('select lexicon2') ;

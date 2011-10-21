@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  version: MyString
+  description: MyText
+  uid: MyString
+  codeValue: MyString
+  codeMeaning: MyString
+  codingSchemeDesignator: MyString
+  codingSchemeVersion: MyString
+  authors: MyString
+  creationDate: 2010-05-31 14:14:01
+
+two:
+  name: MyString
+  version: MyString
+  description: MyText
+  uid: MyString
+  codeValue: MyString
+  codeMeaning: MyString
+  codingSchemeDesignator: MyString
+  codingSchemeVersion: MyString
+  authors: MyString
+  creationDate: 2010-05-31 14:14:01

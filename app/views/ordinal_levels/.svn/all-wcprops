@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/ordinal_levels
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/ordinal_levels/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/ordinal_levels/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/ordinal_levels/new.html.erb
+END
+_ordinal_level.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/ordinal_levels/_ordinal_level.erb
+END
+ordinal_levels.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/ordinal_levels/ordinal_levels.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/ordinal_levels/show.html.erb
+END

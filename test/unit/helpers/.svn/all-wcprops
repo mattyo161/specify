@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers
+END
+imaging_observation_characteristics_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers/imaging_observation_characteristics_helper_test.rb
+END
+users_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers/users_helper_test.rb
+END
+anatomic_entity_characteristics_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers/anatomic_entity_characteristics_helper_test.rb
+END
+main_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers/main_helper_test.rb
+END
+user_sessions_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers/user_sessions_helper_test.rb
+END
+template_stores_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers/template_stores_helper_test.rb
+END
+templates_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/test/unit/helpers/templates_helper_test.rb
+END

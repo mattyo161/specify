@@ -1,0 +1,78 @@
+#bioportal_nav {
+	float:left;
+	margin-right:10px;
+	width: 220px;
+	height: 600px;
+	overflow: scroll;
+	border: 1px solid #eee;
+}
+
+#bioportal_nav ul.main {
+	padding: 0;
+}
+
+#bioportal_nav ul {
+	list-style: none;
+	padding-left: 20px;
+	width:1000px;
+}
+
+#bioportal_content {
+	margin-left: 0px;
+}
+
+dl {
+    margin-bottom:50px;
+}
+ 
+dl dt {
+    background:#5f9be3;
+    color:#fff;
+    float:left;
+    font-weight:bold;
+    margin:5px;
+    padding:2px;
+    width:100px;
+}
+ 
+dl dd {
+	margin-bottom: 10px;
+	margin-left: 115px;
+	padding-top: 8px;
+    display:block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div.clear {
+	clear:both;
+}
+
+
+a.delete {
+    background-image: url("../images/famfamfam_silk_icons_v013/icons/delete.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 16px;
+ }
+ 
+a.create {
+    background-image: url("../images/famfamfam_silk_icons_v013/icons/add.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 16px;
+ }

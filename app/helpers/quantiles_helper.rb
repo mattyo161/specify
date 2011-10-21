@@ -1,0 +1,2 @@
+module QuantilesHelper
+end

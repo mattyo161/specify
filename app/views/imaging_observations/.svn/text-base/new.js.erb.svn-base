@@ -1,0 +1,5 @@
+$(".newImagingObservation").html("<%= escape_javascript(render :partial => 'form', :collection => [@imaging_observation]) %>") ;
+ajaxLinks();
+//$(".newTemplate").html("<%= escape_javascript('') %>");
+//%>");
+

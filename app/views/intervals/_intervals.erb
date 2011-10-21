@@ -1,0 +1,20 @@
+<div class="quant_type2 centertable">
+	<div style="float:right">
+	  <img id="addInterval<%= characteristic_quantification.id.to_s %>" class="addIntervalTableRow" src="/images/icons_transparent/Add_transparent24x24.png" alt="Add interval table row" title="Add interval table row"/>
+	  <img class="deleteIntervalTableRow" src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete interval table row" title="Delete interval table row"/>
+	</div>
+	<br />
+	<table class="tablesorter intervalTable" >
+		<thead>
+		  <tr>
+			<%= to_tags(['', 'minOperator', 'minValue', 'maxOperator', 'maxValue', 'ucumString'].map { |f| f.titleize }) %>
+		  </tr>
+		</thead>
+		<tbody>
+		  <% #  intervals.map { |at| at.codeMeaning }.to_s
+		  %>
+		  <%= render :partial => '/intervals/interval', :collection => intervals if !intervals.blank? %>
+		</tbody>
+	</table>
+</div>
+<%# end %>

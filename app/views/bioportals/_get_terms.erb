@@ -1,0 +1,26 @@
+<% subid = @subid.nil? ? "default" : @subid.gsub(/\W+/, "-") %>
+<% save_triples = @save_triples.nil? ? false : @save_triples %>
+<% domain_id = @domain_id.nil? ? "" : "&did=#{@domain_id}" %>
+<% property_id = @property_id.nil? ? "" : "&pid=#{@property_id}" %>
+<% @terms.sort {|a,b| a.label <=> b.label}.each do |term| %>
+<% uid = "#{@ontology.id}_#{term.id}".gsub(/[^A-Za-z0-9\-\_\.\:]/,"_") %>
+<li>
+	<% if term.child_count > 0 %>
+		<%= link_to "+", "#", :onclick => "$(function(){
+										    $.ajax({ url: '/bioportals/get_terms?oid=#{@ontology.id}&tid=#{term.id}&update=ul_#{subid}_#{uid}&subid=#{subid}#{domain_id}#{property_id}', type: 'get', dataType:'script' });
+										  });" %>
+	<% end %>
+	<%= link_to "#{term.label}", "#", :onclick => "$(function(){
+										    $.ajax({ url: '/bioportals/get_term_details?oid=#{@ontology.id}&tid=#{term.id}&update=bioportal_content&subid=#{subid}#{domain_id}#{property_id}', type: 'get', dataType:'script' });
+										  });", 
+								:title => "id:#{term.id}" %>
+	<% if domain_id != "" %>
+		<%= link_to "(c)", "#", :onclick => "$(function(){
+										    $.ajax({ url: '/bioportals/create_triple?oid=#{@ontology.id}&tid=#{term.id}#{domain_id}#{property_id}', type: 'get', dataType:'script' });
+										  });", 
+								:title => "id:#{term.id}",
+								:class => "create" %>
+	<% end %>
+	<ul id="<%= "ul_#{subid}_#{uid}" %>"></ul>
+</li>
+<% end %>

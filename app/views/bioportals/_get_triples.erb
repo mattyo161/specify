@@ -1,0 +1,23 @@
+<% triples = BpTriple.all(:conditions => ["domain in (select bp_terms.id from bp_terms left join bp_ontologies on bp_terms.bp_ontology_id = bp_ontologies.id where versionid = ?)", @ontology.id]) %>
+<ul class="triples">
+<% triple_groups = triples.group_by {|t| t.domain} %>
+<% triple_groups.each do |domain, triples| %>
+<li class="domain"><span class="domain"><%= link_to "#{domain.name}", "#", :onclick => "$(function(){
+												    $.ajax({ url: '/bioportals/get_term_details?oid=#{domain.bp_ontology.versionid}&tid=#{domain.bpid}&update=bioportal_content', type: 'get', dataType:'script' });
+												  });", 
+												:title => "id:#{domain.bpid}" %></span><ul>
+	<% triples.each do |triple| %>
+	<li class="triple">
+		<span><%= link_to "(delete)", "#", :onclick => "$(function(){
+										    $.ajax({ url: '/bioportals/delete_triple?oid=#{domain.bp_ontology.versionid}&tripleid=#{triple.id}', type: 'get', dataType:'script' });
+										  });", 
+										:title => "Delete Triple ID #{triple.id}",
+										:class => "delete" %></span>
+		<span class="property"><%= triple.property %></span> - <span class="range"><%= link_to "#{triple.range.name}", "#", :onclick => "$(function(){
+												    $.ajax({ url: '/bioportals/get_term_details?oid=#{domain.bp_ontology.versionid}&tid=#{triple.range.bpid}&update=bioportal_content', type: 'get', dataType:'script' });
+												  });", 
+												:title => "id:#{triple.range.bpid}" %></span></li>
+	<% end %>
+</ul></li>
+<% end %>
+</ul>

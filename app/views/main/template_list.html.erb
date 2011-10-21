@@ -1,0 +1,2 @@
+<% templateList = '' ; current_user.aim_templates.each { |t| templateList += '<p id="AimTemplate' + t.id.to_s + '"><span style="white-space:nowrap">&nbsp;&nbsp;' + t.name + "</span></p>" } %>
+<%= templateList %>

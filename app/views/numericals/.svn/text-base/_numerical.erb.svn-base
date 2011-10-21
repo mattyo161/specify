@@ -1,0 +1,51 @@
+<% if numerical %>
+<tr class='numericals' id='numerical<%= numerical.id.to_s %>' name='element'> 
+  <td><input type='checkbox'/></td>
+  <td>
+    <select class='operator select'>
+	  <option value='' ></option>
+      <option value='LessThan' <%= 'selected' if numerical.operator == 'LessThan' %>> < </option>
+	  <option value='LessThanEqual' <%= 'selected' if numerical.operator == 'LessThanEqual' %>> <= </option>
+      <option value='GreaterThan' <%= 'selected' if numerical.operator == 'GreaterThan' %>> > </option>
+	  <option value='GreaterThanEqual' <%= 'selected' if numerical.operator == 'GreaterThanEqual' %>> >= </option>
+      <option value='Equal' <%= 'selected' if numerical.operator == 'Equal' %>> == </option>
+	  <option value='NotEqual' <%= 'selected' if numerical.operator == 'NotEqual' %>> != </option>
+    </select>
+  </td>
+  <td class='value editableText'><%= numerical.value.to_s %></td>
+  <td>
+	<%#= numerical.ucumString.to_s %>
+	
+    <select class='ucumString select'>
+      <option value='m' <%= 'selected' if numerical.ucumString == 'm' %>> meter </option>
+      <option value='m2' <%= 'selected' if numerical.ucumString == 'm2' %>> m^2 </option>
+	  <option value='mm' <%= 'selected' if numerical.ucumString == 'mm' %>> mm </option>
+	  <option value='mm2' <%= 'selected' if numerical.ucumString == 'mm2' %>> mm^2 </option>
+	  <option value='cm' <%= 'selected' if numerical.ucumString == 'cm' %>> cm </option>
+	  <option value='cm2' <%= 'selected' if numerical.ucumString == 'cm2' %>> cm^2 </option>
+	  <option value='Hz' <%= 'selected' if numerical.ucumString == 'Hz' %>> Hz </option>
+	  <option value='s' <%= 'selected' if numerical.ucumString == 's' %>> s </option>
+	  <option value='ms' <%= 'selected' if numerical.ucumString == 'ms' %>> ms </option>
+	  <option value='min' <%= 'selected' if numerical.ucumString == 'min' %>> minute </option>
+	  <option value='h' <%= 'selected' if numerical.ucumString == 'h' %>> hour </option>
+	  <option value='d' <%= 'selected' if numerical.ucumString == 'd' %>> day </option>
+	  <option value='wk' <%= 'selected' if numerical.ucumString == 'wk' %>> week </option>
+	  <option value='mo' <%= 'selected' if numerical.ucumString == 'mo' %>> month </option>
+	  <option value='a' <%= 'selected' if numerical.ucumString == 'a' %>> Year </option>
+	  <option value='g' <%= 'selected' if numerical.ucumString == 'g' %>> gram </option>
+	  <option value='mg' <%= 'selected' if numerical.ucumString == 'mg' %>> mg </option>
+	  <option value='kg' <%= 'selected' if numerical.ucumString == 'kg' %>> kg </option>
+	  <option value='rad' <%= 'selected' if numerical.ucumString == 'rad' %>> radian </option>
+	  <option value='deg' <%= 'selected' if numerical.ucumString == 'deg' %>> degrees </option>
+	  <option value='pixel' <%= 'selected' if numerical.ucumString == 'pixel' %>> pixel </option>
+	  <option value='HU' <%= 'selected' if numerical.ucumString == 'HU' %>> hounsfield </option>
+	  <option value='%' <%= 'selected' if numerical.ucumString == '%' %>>Percent </option>
+	  <option value='1' <%= 'selected' if numerical.ucumString == '1' %>> ratio </option>
+	  <option value='Cel' <%= 'selected' if numerical.ucumString == 'Cel' %>> Celsius </option>
+	  <option value='l' <%= 'selected' if numerical.ucumString == 'l' %>> l </option>
+	  <option value='ml' <%= 'selected' if numerical.ucumString == 'ml' %>> ml </option>
+    </select>
+	
+  </td>
+</tr>
+<% end %>

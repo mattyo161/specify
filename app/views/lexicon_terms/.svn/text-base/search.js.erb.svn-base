@@ -1,0 +1,5 @@
+//alert('lexicon term search results') ;
+//alert('<%= @element_id %>') ;
+//alert('<%= @lexicon_search_results.length %>');
+$("#<%= @element_id %>").html("<%= escape_javascript(render :partial => '/lexicon_terms/search', :collection => @lexicon_search_results) %>") ;
+//alert('lexicon term search results2') ;

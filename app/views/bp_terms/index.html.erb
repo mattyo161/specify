@@ -1,0 +1,24 @@
+<h1>Listing bp_terms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Bpid</th>
+    <th>Bp ontology</th>
+  </tr>
+
+<% @bp_terms.each do |bp_term| %>
+  <tr>
+    <td><%=h bp_term.name %></td>
+    <td><%=h bp_term.bpid %></td>
+    <td><%=h bp_term.bp_ontology_id %></td>
+    <td><%= link_to 'Show', bp_term %></td>
+    <td><%= link_to 'Edit', edit_bp_term_path(bp_term) %></td>
+    <td><%= link_to 'Destroy', bp_term, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bp_term', new_bp_term_path %>

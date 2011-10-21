@@ -1,0 +1,27 @@
+<% if !lexicon_terms.blank? %>
+  <table class="tablesorter text" id="myTable4" cellpadding="10">
+    <thead>
+      <tr class="lexiconTermParentTableHeader" id="lexiconTable0">
+		<th></th>
+		<th style="width:30%">Code Meaning</th>
+		<th style="width:5%">Code Value</th>
+		<th style="width:5%">Coding Scheme Designator</th>
+		<th style="width:5%">Coding Scheme Version</th>
+		<th style="width:45%">Description</th>
+		<th style="width:5%">Lexicon Name</th>
+        <%#= table_header(LexiconTerm.new) %>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render :partial => '/lexicon_terms/lexicon_term', :collection => lexicon_terms %>
+    </tbody>
+  </table>
+<% else %>
+  <h1><%= LexiconTerm.all.blank? ? 'No Lexicons available' : 'Select a Lexicon from the left panel' %></h1>
+<%  end %>
+
+  <!--        <th>No.</th>
+        <th>Code Meaning</th>
+        <th>Code Value</th>
+        <th>Coding Scheme Designator</th>
+        <th>Code Version</th> -->

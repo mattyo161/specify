@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts
+END
+quantiles.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/quantiles.html.erb
+END
+intervals.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/intervals.html.erb
+END
+characteristic_quantifications.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/characteristic_quantifications.html.erb
+END
+scales.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/scales.html.erb
+END
+lexicon_terms.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/lexicon_terms.html.erb
+END
+inferences.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/inferences.html.erb
+END
+imaging_observation_characteristics.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/imaging_observation_characteristics.html.erb
+END
+calculations.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/calculations.html.erb
+END
+anatomic_entity_characteristics.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/anatomic_entity_characteristics.html.erb
+END
+main.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/main.html.erb
+END
+components.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/components.html.erb
+END
+header.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/header.html.erb
+END
+error.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/error.html.erb
+END
+templates.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/templates.html.erb
+END
+logo.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/logo.html.erb
+END
+template_containers.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/template_containers.html.erb
+END
+non_quantifiables.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/non_quantifiables.html.erb
+END
+allowed_terms.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/allowed_terms.html.erb
+END
+numericals.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/numericals.html.erb
+END
+ordinal_levels.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/ordinal_levels.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/application.html.erb
+END
+main0.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/main0.html.erb
+END
+user_sessions.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/layouts/user_sessions.html.erb
+END

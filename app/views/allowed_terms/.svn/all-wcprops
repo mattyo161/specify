@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/allowed_terms
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/allowed_terms/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/allowed_terms/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/allowed_terms/new.html.erb
+END
+_allowed_term.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/allowed_terms/_allowed_term.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/allowed_terms/show.html.erb
+END
+allowed_terms.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/allowed_terms/allowed_terms.html.erb
+END

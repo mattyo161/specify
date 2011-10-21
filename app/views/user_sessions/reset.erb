@@ -1,0 +1,60 @@
+<div style="background-color:#C6CACD; background-image:url('/images/AIM_logo_15.png'); background-repeat:no-repeat; border-bottom:30px solid #354149; border-top:25px solid #354149; border-left:5px solid #354149; border-right:5px solid #354149; height:548px; padding-left:10px">
+  <h1 style="color:#121D26">Password Reset</h1>
+  <% form_for User.new, :url => '/users/reset', :method => :put do |f| %>
+    <%= f.error_messages %>
+    <%= f.label :login
+  %>
+    <%= f.text_field :login
+  %>
+
+    <%= f.label :email
+  %>
+    <%= f.text_field :email
+  %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+    <%= f.submit "Update my password and log me in" %>
+  <% end %>
+  <% # form_tag '/user_sessions/reset', :method => :put do
+  %>
+  <!--    <b>
+        <span class="form_headers"> -->
+  <% # = label_tag :login
+  %>
+  <% # = text_field_tag :login
+  %>
+
+  <% # = label_tag :email
+  %>
+  <% # = text_field_tag :email
+  %>
+
+  <% # = label_tag :password
+  %>
+  <% # = password_field_tag :password
+  %>
+
+  <% # =  label_tag :password_confirmation
+  %>
+  <% # = password_field_tag :password_confirmation
+  %>
+  <!--      </span>
+      </b> -->
+  <% # = submit_tag "Reset Password"
+  %>
+  <% #  end
+  %>
+</div>
+
+<% # account_path
+%>
+<% # form_for @user, :url => '' do |f|
+%>
+<% # form_tag :id=>"resetPasswordForm" do
+%> <!-- ({:action => "", :controller => "main"}, :multipart => true, :id=>"", :class=>"ajaxForm") -->
+<%  #  f.submit "Reset"
+%>
+<%  # end
+%>

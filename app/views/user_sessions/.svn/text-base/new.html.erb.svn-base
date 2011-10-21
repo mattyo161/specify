@@ -1,0 +1,98 @@
+<table style="padding: 0; margin: 0">
+  <tr>
+    <td>
+      <form action="/user_session" class="new_user_session" id="new_user_session" method="post">
+        <div style="margin:0;padding:0">
+          <table style="padding: 0; margin: 0">
+            <tr>
+              <td valign="center">
+                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+              </td>
+              <td valign="center">
+                <b><span class="form_headers"><label for="user_session_login">Login</label></span></b>
+              </td>
+              <td valign="center">
+                <b><span class="form_headers"><input id="user_session_login" name="user_session[login]" size="20" type="text" /></span></b>
+              </td>
+              <td valign="center">
+                <b><span class="form_headers"><label for="user_session_password">Password</label></span></b>
+              </td>
+              <td valign="center">
+                <b><span class="form_headers"><input id="user_session_password" name="user_session[password]" size="20" type="password" /></span></b>
+              </td>
+              <td valign="center">
+            <span style="white-space:nowrap"><b><span class="form_headers"><input name="user_session[remember_me]" type="hidden" value="0" /><input id="user_session_remember_me" name="user_session[remember_me]" type="checkbox" value="1" /><label for="user_session_remember_me">Remember me</label></span></b></span>
+            </td>
+            <td valign="center">
+              <button type="submit" id="login" class="mybutton" style="padding-left:20px; padding-right:20px"><span class="button_text">Login</span></button>
+            </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </td>
+
+    <td valign="center">
+      <form method="get" action="<%= new_account_path %>" class="button-to">
+        <button type="submit" id="request_account" class="mybutton" style="padding-left:20px; padding-right:20px"><span class="button_text">Request an account</span></button>
+      </form>
+    </td>
+    <td valign="center">
+      <form method="get" action="/users/reset" class="button-to">
+        <button type="submit" id="forgot" class="mybutton" style="padding-left:20px; padding-right:20px"><span class="button_text">Password Reset</span></button>
+      </form>
+    </td>
+  </tr>
+</table>
+
+<div style="background-color:#E2E4E5; background-image:url('/images/AIM_logo_15.png'); background-repeat:no-repeat; margin-left: 8px; margin-right: 8px; border-bottom:30px solid #354149; border-top:25px solid #354149; border-left:5px solid #354149; border-right:5px solid #354149; height:548px; -webkit-border-radius:5px; -moz-border-radius:5px;">
+</div>
+
+<!--
+</tr>
+</table>
+-->
+<!--
+<% # form_for @user, :url => account_path do |f|
+%>
+<%  #  f.error_messages
+%>
+<% # render :partial => "form", :object => f
+%>
+<% # f.submit "Register"
+%>
+<% # end
+%>
+-->
+<!-- <input id="user_session_submit" name="commit" type="submit" value="Login" /> -->
+<!--
+
+<h1>Login</h1>
+<% # form_for @user_session, :url => user_session_path do |f|
+%>
+<% #  f.error_messages
+%>
+              <b><font class="form_headers">
+<% #  f.label :login
+%></font></b>
+              <b><font class="form_headers">
+<%  #  f.text_field :login
+%></font></b>
+              <b><font class="form_headers">
+<%  #  f.label :password
+%></font></b>
+              <b><font class="form_headers">
+<% #  f.password_field :password
+%></font></b>
+              <b><font class="form_headers">
+<% #  f.check_box :remember_me
+%>
+<% # f.label :remember_me
+%></font></b>
+<% #  f.submit "Login"
+%>
+<% # end
+%>
+
+-->
+

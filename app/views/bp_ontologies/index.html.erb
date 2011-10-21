@@ -1,0 +1,28 @@
+<h1>Listing bp_ontologies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Abbreviation</th>
+    <th>Versionid</th>
+    <th>Ontologyid</th>
+  </tr>
+
+<% @bp_ontologies.each do |bp_ontology| %>
+  <tr>
+    <td><%=h bp_ontology.name %></td>
+    <td><%=h bp_ontology.description %></td>
+    <td><%=h bp_ontology.abbreviation %></td>
+    <td><%=h bp_ontology.versionid %></td>
+    <td><%=h bp_ontology.ontologyid %></td>
+    <td><%= link_to 'Show', bp_ontology %></td>
+    <td><%= link_to 'Edit', edit_bp_ontology_path(bp_ontology) %></td>
+    <td><%= link_to 'Destroy', bp_ontology, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bp_ontology', new_bp_ontology_path %>

@@ -1,0 +1,19 @@
+<h1>Welcome to BioPortal 2011.07.17</h1>
+
+<div id="bioportal_viewer">
+<!-- 	<%= link_to "Use Staging Server", {:action => "use_staging_server"} %> -->
+	<div id="bioportal_menu">
+		Select Ontology: 
+		<select id="bioportal_ontology" onChange="$(function(){
+												    $.ajax({ url: '/bioportals/get_ontology?oid='+$(#bioportal_ontology).val(), type: 'get', dataType:'script' });
+												  });">
+			<%= options_for_select @ontology_list %>
+		</select>
+	</div>
+	<div id="bioportal_nav">
+		<div id="bioportal_terms">
+		</div>
+	</div>
+	<div id="bioportal_content">
+	</div>
+</div>

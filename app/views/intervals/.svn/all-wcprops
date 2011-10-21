@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/intervals
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/intervals/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/intervals/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/intervals/new.html.erb
+END
+_interval.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/intervals/_interval.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/intervals/show.html.erb
+END
+_intervals.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/intervals/_intervals.erb
+END

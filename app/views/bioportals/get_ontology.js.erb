@@ -1,0 +1,4 @@
+$("#bioportal_triples").html("<%= escape_javascript(render :partial => 'get_triples') %>") ;
+$("#bioportal_content").html("<%= escape_javascript(render :partial => 'get_ontology') %>") ;
+$("#tab5").layout().sizePane('west',350);
+ajaxLinks();

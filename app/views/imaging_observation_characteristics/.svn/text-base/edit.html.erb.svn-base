@@ -1,0 +1,44 @@
+<h1>Editing imaging_observation_characteristic</h1>
+
+<% form_for(@imaging_observation_characteristic) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :label %><br />
+    <%= f.text_field :label %>
+  </p>
+  <p>
+    <%= f.label :minCardinality %><br />
+    <%= f.text_field :minCardinality %>
+  </p>
+  <p>
+    <%= f.label :maxCardinality %><br />
+    <%= f.text_field :maxCardinality %>
+  </p>
+  <p>
+    <%= f.label :itemNumber %><br />
+    <%= f.text_field :itemNumber %>
+  </p>
+  <p>
+    <%= f.label :shouldDisplay %><br />
+    <%= f.check_box :shouldDisplay %>
+  </p>
+  <p>
+    <%= f.label :explanatoryText %><br />
+    <%= f.text_area :explanatoryText %>
+  </p>
+  <p>
+    <%= f.label :authors %><br />
+    <%= f.text_field :authors %>
+  </p>
+  <p>
+    <%= f.label :annotatorConfidence %><br />
+    <%= f.check_box :annotatorConfidence %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @imaging_observation_characteristic %> |
+<%= link_to 'Back', imaging_observation_characteristics_path %>

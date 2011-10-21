@@ -1,0 +1,28 @@
+<p>
+  <b>Bp ontology:</b>
+  <%=h @bp_property.bp_ontology_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @bp_property.name %>
+</p>
+
+<p>
+  <b>Bpid:</b>
+  <%=h @bp_property.bpid %>
+</p>
+
+<p>
+  <b>Domain:</b>
+  <%=h @bp_property.domain %>
+</p>
+
+<p>
+  <b>Range:</b>
+  <%=h @bp_property.range %>
+</p>
+
+
+<%= link_to 'Edit', edit_bp_property_path(@bp_property) %> |
+<%= link_to 'Back', bp_properties_path %>

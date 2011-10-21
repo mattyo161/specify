@@ -1,0 +1,54 @@
+<div id="tab5" class="tab ui-tabs-hide">
+  <div class="ui-layout-north ui-widget">
+    <div class="toolbar ui-widget-content ui-state-active">
+    </div>
+  </div>
+  <div class="ui-layout-south ui-widget">
+    <div class="toolbar ui-widget-content ui-state-active">
+    </div>
+  </div>
+  <div class="ui-layout-west">
+    <div class="ui-layout-center">
+      <div class="ui-widget-header ui-corner-top">Triples</div>
+      <div class="ui-widget-content" id="templateContainerList" style="background-image:url('/images/AIM_logo_15.png'); background-repeat:no-repeat">
+			<div id="bioportal_triples">
+			</div>
+      </div>
+      <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+
+
+      </div>
+    </div>
+  </div>
+  <div class="ui-layout-center">
+    <div class="ui-widget-header ui-corner-top">
+      Ontology:  
+		<select id="bioportal_ontology" onChange="$(function(){
+												    $.ajax({ url: '/bioportals/get_ontology?oid='+$('#bioportal_ontology').val(), type: 'get', dataType:'script' });
+												  });">
+			<%= options_for_select @ontologies %>
+		</select>
+    </div>
+    <div class="ui-widget-content" style="padding:0px" id="templateGroupTableDiv">
+		<div id="bioportal_content">
+		</div>
+    </div>
+    <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+
+    </div>
+  </div>
+  <!-- This pane will be removed for now unless it is needed in the future
+  <div class="ui-layout-east">
+    <div class="ui-layout-center">
+      <div class="ui-widget-header ui-corner-top">
+        Ontology Details
+      </div>
+      <div class="ui-widget-content" style="padding:0px">
+		<h1>Ontology stuff</h1>
+      </div>
+      <div class="ui-widget-footer ui-widget-header ui-corner-bottom" style="height:24px">
+      </div>
+    </div>
+  </div>
+  -->
+</div><!-- /#tab1 -->

@@ -1,0 +1,8 @@
+<% if @ontology.nil? %>
+Error could not load Ontology
+<% else %>
+<h2><%= @ontology.label %></h2>
+<ul class="main">
+<%= render :partial => "get_terms" %>
+</ul>
+<% end %>

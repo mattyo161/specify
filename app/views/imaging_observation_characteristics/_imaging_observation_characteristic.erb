@@ -1,0 +1,25 @@
+<% if !imaging_observation_characteristic.blank? %>
+<tr class='imaging_observation_characteristics' id='imaging_observation_characteristic<%= imaging_observation_characteristic.id.to_s %>' name='element'>
+	<td style='width:20px; vertical-align:text-top; text-align:center' class='expand'><img alt='' src='/images/Expanded16x16.png' class='collapseComponentCharacteristic'/></td>
+	<td>
+		<table class='notablesorter' style='border-spacing:0; width:100px;'>
+		   <tbody>
+			  <tr class='componentCharacteristicAttrs'>
+				<td style='width:150px' class='label editableText' title='<%= imaging_observation_characteristic.label %>'><%= imaging_observation_characteristic.label %></td>
+				<td style='width:200px' class='explanatoryText editableText' title='<%= imaging_observation_characteristic.explanatoryText %>'><%= imaging_observation_characteristic.explanatoryText %></td>
+				<td style='width:40px' class='minCardinality editableText' title='<%= imaging_observation_characteristic.minCardinality %>'><%= imaging_observation_characteristic.minCardinality %></td>
+				<td style='width:40px' class='maxCardinality editableText' title='<%= imaging_observation_characteristic.maxCardinality %>'><%= imaging_observation_characteristic.maxCardinality %></td>
+				<td style='width:75px' ><input type='checkbox' class='shouldDisplay' value='display' <%= 'checked' if imaging_observation_characteristic.shouldDisplay %> /></td>
+				<td style='width:90px' ><input type='checkbox' class='annotatorConfidence' value='confidence' <%= 'checked' if imaging_observation_characteristic.annotatorConfidence %>/></td>
+				<td style='width:100px' class='authors editableText' title='<%= imaging_observation_characteristic.authors %>'><%= imaging_observation_characteristic.authors %></td>
+		      </tr>
+		   </tbody>
+		</table>
+		<div style='padding-left:20px' class='componentCharacteristicInfo'>
+		<%=   render :file => 'allowed_terms/allowed_terms.html.erb', :locals => { :allowed_terms => imaging_observation_characteristic.allowed_terms, :parent_id => imaging_observation_characteristic.id.to_s, :parent_type => 'imaging_observation_characteristics' } 
+		%>
+		</div>
+	</td>
+</tr>
+<% imaging_observation_characteristic.update_attributes(:itemNumber => imaging_observation_characteristic_counter) if imaging_observation_characteristic.itemNumber != imaging_observation_characteristic_counter %>
+<% end %>

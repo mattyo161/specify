@@ -1,0 +1,23 @@
+<tr>
+    <td><%= data.id %></td>
+    <td><%= data.label %></td>
+    <td><select>
+            <option value="Anatomic Entity" <%= 'selected="selected"' if data.anatomic_entity rescue nil %>">Anatomic Entity</option>
+            <option value="Imaging Observation" <%= 'selected="selected"' if data.imaging_observation rescue nil %>">Imaging Observation</option>
+            <option value="Inference" <%= 'selected="selected"' if data.inference rescue nil %>">Inference</option>
+            <option value="Calculation" <%= 'selected="selected"' if data.calculation rescue nil %>">Calculation</option>
+        </select>
+    </td>
+    <td><%= data.explanatoryText %></td>
+    <td><%= data.minCardinality.to_s %></td>
+    <td><%= data.maxCardinality.to_s %> </td>
+    <td>
+      <% if data.shouldDisplay ; opts = { :checked => "checked" } ; else ; opts = {} ; end %>
+      <%= check_box 'data', 'shouldDisplay', opts, "yes", "no" %>
+    </td>
+    <td>
+      <% if data.annotatorConfidence ; opts = { :checked => "checked" } ; else ; opts = {} ; end %>
+      <%= check_box 'data', 'annotatorConfidence', opts, "yes", "no" %>
+    </td>
+    <td><%= data.authors %></td>
+</tr>

@@ -1,0 +1,30 @@
+<% if aim_template != nil %>
+  <h3><%= aim_template.name %></h3>
+  <table class="tablesorter" id="templateSummaryTable">
+    <thead><%= table_header(aim_template) %></thead>
+    <tbody>
+      <tr>
+        <%= wrapper(aim_template, aim_template.attribute_names, 'td') %>
+      </tr>
+    </tbody>
+  </table>
+  <%  components = aim_template.components %>
+  <% if components != nil && components.any? %>
+    <h4>Template Components</h4><a href="#" class="collapseAllComponents"><!-- <img alt='' src='/images/Expanded8x8.png' class='expandCollapseImg'/>&nbsp; --><span>Expand/Collapse All</span></a>
+        | <b> Component Order </b>
+        <select class="component_order">
+          <option value="created_at ASC">Created At (low to high)</option>
+          <option value="created_at DESC">Created At (high to low)</option>
+          <option value="component_type ASC">Component Type (A to Z)</option>
+          <option value="component_type DESC">Component Type (Z to A)</option>
+          <option value="label ASC">Label (A to Z)</option>
+          <option value="label DESC">Label (Z to A)</option>
+        </select>
+    <div id="templateComponentsDiv">
+      <!--<form>-->
+        <!--<select name="orderby" onchange="this.form.submit();">-->
+      <!--</form>-->
+      <%= render :partial => '/components/component', :collection => components %>
+    </div>
+  <% end %>
+<% end %>

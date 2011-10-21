@@ -1,0 +1,10 @@
+        <div id="outer-north" style="background-color:#121D26; left:0px; right:0px" >
+            <img src="/images/NU_logo.png" style="float:right; margin-top:10px; margin-right:5px" alt="northwestern" />
+            <img src="/images/stanford_logo_all.png" style="float:right; margin-top:10px; margin-right:5px" alt="stanford" />
+            <span style="white-space:nowrap">
+            <b style="font-family:arial,sans-serif; color:#91999D; font-size:12px">Annotation and Image Markup (AIM)</b>
+            </span>
+            <br/>
+            <span style="white-space:nowrap"><b style="font-family:arial,sans-serif; font-size:44px; color:#E2E4E5;">AIM Template Manager</b></span>
+        </div>
+

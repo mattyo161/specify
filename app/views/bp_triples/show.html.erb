@@ -1,0 +1,18 @@
+<p>
+  <b>Domain:</b>
+  <%=h @bp_triple.domain %>
+</p>
+
+<p>
+  <b>Property:</b>
+  <%=h @bp_triple.property %>
+</p>
+
+<p>
+  <b>Range:</b>
+  <%=h @bp_triple.range %>
+</p>
+
+
+<%= link_to 'Edit', edit_bp_triple_path(@bp_triple) %> |
+<%= link_to 'Back', bp_triples_path %>

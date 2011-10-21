@@ -1,0 +1,7 @@
+$("#availableTemplatesTableBody").html("<%= escape_javascript(render :partial => '/aim_templates/available_templates/', :collection => current_user.aim_templates) %>") ;
+$("#templateList").html("<%= escape_javascript(render :file => '/main/template_list.html.erb') %>") ;
+$("#templateTableDiv").html("<%= escape_javascript(render :file => '/main/template_table.html.erb') %>") ;
+$("#templateGroupTableDiv").html("<%= escape_javascript(render :file => '/main/template_group_table.html.erb') %>") ;
+$("#AimTemplate"+selectedTemplateId).click();
+//alert('update aim template 1') ;
+//alert('update aim template 2') ;

@@ -1,0 +1,5 @@
+alert('Hello from AJAX');
+$("#new_user").before('<div id="flash_notice"><%= escape_javascript(flash.delete(:notice)) %></div>');
+// $("#users_count").html("<%= pluralize(@user.product.users.count, 'user') %>");
+//$("#users").append("<%= escape_javascript(render(:partial => @user)) %>");
+$("#new_user")[0].reset();

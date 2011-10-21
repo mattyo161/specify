@@ -1,0 +1,13 @@
+<div class="quant_type1 centertable" <%= 'style="display:none"' if quantile == nil %> >
+<div style="float:right">
+  <img class="deleteQuantile" id="deleteQuantile<%= quantile.id.to_s unless quantile.blank? %>" src="/images/icons_transparent/Delete_Transparent24x24.png" alt="Delete quantile" title="Delete quantile"/>
+</div>
+<table>
+	<tbody>
+		<tr class='quantiles' id='quantile<%= quantile.id.to_s unless quantile.blank? %>' name='element'>
+			<td>Quantile</td>
+			<td class='bins editableText' style='width:50px; border-width:1px; border-style:solid; border-color:#CDCDCD'><%= quantile.bins.to_s unless quantile.blank? %></td>
+		</tr>
+	</tbody>
+</table>
+</div>

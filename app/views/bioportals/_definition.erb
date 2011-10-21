@@ -1,0 +1,4 @@
+<% if my_value and my_value.size > 0 %>
+<dt class="<%= my_title.gsub(/\W+/,'-') %>"><%= my_title %>:</dt>
+<dd class="<%= my_title.gsub(/\W+/,'-') %>"><%= my_value %></dd>
+<% end %>

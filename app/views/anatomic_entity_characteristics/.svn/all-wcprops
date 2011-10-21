@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/edit.html.erb
+END
+anatomic_entities_characteristics.erb
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/anatomic_entities_characteristics.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/new.html.erb
+END
+_anatomic_entity_characteristic.erb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/_anatomic_entity_characteristic.erb
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/create.js.erb
+END
+_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/_form.erb
+END
+anatomic_entity_characteristics.erb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/anatomic_entity_characteristics.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/show.html.erb
+END
+new.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entity_characteristics/new.js.erb
+END

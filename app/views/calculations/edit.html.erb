@@ -1,0 +1,32 @@
+<h1>Editing calculation</h1>
+
+<% form_for(@calculation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :uid %><br />
+    <%= f.text_field :uid %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :mathML %><br />
+    <%= f.text_field :mathML %>
+  </p>
+  <p>
+    <%= f.label :algorithmName %><br />
+    <%= f.text_field :algorithmName %>
+  </p>
+  <p>
+    <%= f.label :algorithmVersion %><br />
+    <%= f.text_field :algorithmVersion %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @calculation %> |
+<%= link_to 'Back', calculations_path %>

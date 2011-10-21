@@ -1,0 +1,119 @@
+class MainController < ApplicationController
+  # require 'zip/zip'
+  require 'zip/zipfilesystem'
+  require 'XMLValidator'
+  include XMLValidator
+  before_filter :require_user
+  def index
+    # if current_user
+		  # @templates = current_user.aim_templates
+		  # @template_stores = current_user.template_stores # TemplateStore.find(:all, :conditions => 'user_id LIKE ' + current_user.id.to_s)
+		  # @imaging_observations = ImagingObservation.all
+		  # @imaging_observation_characteristics = ImagingObservationCharacteristic.all
+		  # @anatomic_entities = AnatomicEntity.all
+		  # @anatomic_entity_characteristics = AnatomicEntityCharacteristic.all
+		  # @str = show_obj(AimTemplate) + show_obj(TemplateStore) + show_obj(ImagingObservation) + show_obj(ImagingObservationCharacteristic) + show_obj(AnatomicEntity) + show_obj(AnatomicEntityCharacteristic)
+		  # @str = 'test'
+    # else
+    #  redirect_to '/user_session/new'
+    # end
+    @error = params[:error]
+    @x = params[:x]
+    respond_to do |format|
+      format.html
+      # format.js { render :layout => false }
+    end
+  end
+  def select_template
+    params[:id] && params[:id] != 'null' ? @aim_template = AimTemplate.find(params[:id]) : nil
+    # @template = AimTemplate.find(params[:id])
+    # @template.id = 123
+    respond_to do |format|
+      format.html { render :file => '/main/template_table.html.erb' }
+      # format.html { render :text => @aim_template.id } # { render :layout => false }
+      # format.js # { render :text => 'whoops' } # { render :layout => false }
+    end
+  end
+  def select_template_container
+    params[:id] ? @template_container = TemplateContainer.find(params[:id]) : nil
+    # @template = AimTemplate.find(params[:id])
+    # @template.id = 123
+    respond_to do |format|
+      format.html { render :file => '/main/template_group_table.html.erb' }
+      # format.html { render :text => @aim_template.id } # { render :layout => false }
+      format.js # { render :text => 'whoops' } # { render :layout => false }
+    end
+  end
+ # def data
+ #   @aim_templates
+ #   respond_to do |format|
+ #     format.html { render :partial => '/aim_templates/list', :collection => @components }
+#      # format.html { render :text => @aim_template.id } # { render :layout => false }
+#      # format.js # { render :text => 'whoops' } # { render :layout => false }
+#    end
+#  end
+  def download_request
+    container = TemplateContainer.find(params[:id])
+    @x = xml_validate(container_xml(container))
+    @error = @x.blank? ? nil : 'Cannot download: Incomplete template due to a template validation failure'
+    # @x = ''
+    @container_id = container.id.to_s
+    respond_to do |format|
+      format.js { render :file => '/main/error.js.erb' }
+    end
+  end
+  def download
+    container = TemplateContainer.find(params[:id])
+    # = xml_validate(container_xml(container))
+    t = makeZip(container)
+    send_file t.path, :type => 'application/zip', :disposition => 'attachment', :filename => container.name.gsub(/\s/, '_') + "_" + Time.now.to_s.gsub(/\s/, '_') + ".zip" # if x == 0 # Send it using the right mime type, with a download window and some nice file name.
+    # The temp file will be deleted some time...
+    t.close
+  end  
+  def convertUpload(uploaded_file)
+    # if uploaded_file.is_a?(ActionController::UploadedStringIO)
+    # temp_file = Tempfile.new("some_temp_name")
+    # temp_file.write uploaded_file.read
+    # uploaded_file = temp_file
+    # temp_file.close
+    # end
+    if uploaded_file.respond_to? :read
+      data = uploaded_file.read
+    else
+      data = uploaded_file
+    end
+  end
+  #  private :convertUpload
+  def makeZip(container)
+    t = Tempfile.new("r_temp")
+    # Give the path of the temp file to the zip outputstream, it won't try to open it as an archive.\
+    Zip::ZipOutputStream.open(t.path) do |zos|
+      zos.put_next_entry(container.name + '.xml')
+      zos << container_xml(container) # Add the contents of the file, don't read the stuff linewise if its binary, instead use direct IO
+    end
+    t
+  end  
+  private :makeZip
+
+  def upload
+    #   tc = TemplateStore.new({ :templatetext => convertUpload(params[:uploaded_data]).class.to_s })
+    aim_template_xml = convertUpload(params[:uploaded_data]) # make sure we have the data as a string and not a file object
+    @x = xml_validate(aim_template_xml)
+    buildTemplateContainer(aim_template_xml) if @x.blank?
+    # flash[:notice] = "Upload OK: valid XML file" if x == 0
+    @error = @x.blank? ? nil : "Cannot upload: invalid XML file" unless @x.blank?
+    # tc = TemplateStore.new({ :templatetext => aim_template_xml
+    # })
+    # render :text => tc.id.to_s
+    respond_to do |format|
+      # format.html { render :js => "alert('ok')", :layout => false }
+      #     if tc.save
+      # format.js { render :layout => false }
+      format.html { redirect_to( :action => 'index', :controller => '/', :error => @error.to_param, :x => @x.to_param )# '/' # + @x.to_param + '&' +  # render :action => 'index', :controller => :main # render :file => '/main/index.html.erb', :layout => 'main' # render :text => ActionController::Base.helpers.javascript_tag("alert('html')")  #
+      }
+      #    else
+      #        render :text => 'bummer'
+      #   end
+    end
+  end
+end

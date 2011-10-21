@@ -1,0 +1,6 @@
+<% if !@error.blank? %>
+  alert('<%= @error %>: <%= escape_javascript(@x.to_s) %>') ;
+<% else %>
+  window.location.href = '/main/download/' + <%= @container_id %>  ;
+//  alert('ok');
+<% end %>

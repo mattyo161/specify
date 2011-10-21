@@ -1,0 +1,24 @@
+<h1>Editing ordinal_level</h1>
+
+<% form_for(@ordinal_level) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :integerValue %><br />
+    <%= f.text_field :integerValue %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :scale_id %><br />
+    <%= f.text_field :scale_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @ordinal_level %> |
+<%= link_to 'Back', ordinal_levels_path %>

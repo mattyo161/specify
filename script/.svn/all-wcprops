@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/script/plugin
+END

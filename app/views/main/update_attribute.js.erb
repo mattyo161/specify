@@ -1,0 +1,21 @@
+//alert('update attr1');
+$("#templateTableDiv").html("<%= escape_javascript(render :file => '/main/template_table.html.erb') %>") ;
+for (component_id in componentsCollapsedState) {
+	if (componentsCollapsedState[component_id]) { //is collapsed
+		$(".components#component"+component_id).find('.collapseComponent').click();
+	}
+}
+for (component_char_id in componentIOCharsCollapsedState) {
+	if (componentIOCharsCollapsedState[component_char_id]) { //is collapsed
+		$("#imaging_observation_characteristic"+component_char_id).find('.collapseComponentCharacteristic').click();
+	}
+}
+for (component_char_id in componentAECharsCollapsedState) {
+	if (componentAECharsCollapsedState[component_char_id]) { //is collapsed
+		$("#anatomic_entity_characteristic"+component_char_id).find('.collapseComponentCharacteristic').click();
+	}
+}
+
+$.unblockUI();
+//alert('update attr2');
+

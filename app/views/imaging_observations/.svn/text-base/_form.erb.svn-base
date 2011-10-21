@@ -1,0 +1,15 @@
+<% form_for form, :html => {:id => 'create_imaging_observation', :class => 'ajaxForm'} do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :annotatorConfidence.to_s.titleize %><br />
+    <%= f.text_field :annotatorConfidence %>
+  </p>
+  <p>
+    <%= f.label :template_id.to_s.titleize %><br />
+    <%= f.text_field :template_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+

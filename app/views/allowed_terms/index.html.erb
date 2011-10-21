@@ -1,0 +1,26 @@
+<h1>Listing allowed_terms</h1>
+
+<table>
+  <tr>
+    <th>Codemeaning</th>
+    <th>Codevalue</th>
+    <th>Codingschemedesignator</th>
+    <th>Imaging observation characteristic</th>
+  </tr>
+
+<% @allowed_terms.each do |allowed_term| %>
+  <tr>
+    <td><%=h allowed_term.codeMeaning %></td>
+    <td><%=h allowed_term.codeValue %></td>
+    <td><%=h allowed_term.codingSchemeDesignator %></td>
+    <td><%=h allowed_term.imaging_observation_characteristic_id %></td>
+    <td><%= link_to 'Show', allowed_term %></td>
+    <td><%= link_to 'Edit', edit_allowed_term_path(allowed_term) %></td>
+    <td><%= link_to 'Destroy', allowed_term, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New allowed_term', new_allowed_term_path %>

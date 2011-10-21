@@ -1,0 +1,31 @@
+<h1>New bp_property</h1>
+
+<% form_for(@bp_property) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bp_ontology_id %><br />
+    <%= f.text_field :bp_ontology_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :bpid %><br />
+    <%= f.text_field :bpid %>
+  </p>
+  <p>
+    <%= f.label :domain %><br />
+    <%= f.text_field :domain %>
+  </p>
+  <p>
+    <%= f.label :range %><br />
+    <%= f.text_field :range %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', bp_properties_path %>

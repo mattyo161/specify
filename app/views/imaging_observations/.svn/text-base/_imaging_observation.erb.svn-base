@@ -1,0 +1,32 @@
+<div class='characteristicsSection'> 
+	<div>
+		<br />
+		<a href='#' class='collapseSection'>
+			<div style='float:left'>
+				<img alt='' src='/images/Expanded8x8.png' class='expandCollapseImg'/>
+				<b><span class='AIMClass'>Imaging Observation</span> Characteristics</b>
+			</div>
+		</a>
+		&nbsp;&nbsp;<img alt='' src='/images/icons_transparent/Add_transparent16x16.png' <%= "id='addImagingObservationCharacteristic" + imaging_observation.id.to_s + "'" unless imaging_observation.blank? %>class='addImagingObservationCharacteristic' title='Add Imaging Observation Characteristic'/>
+		&nbsp;&nbsp;<img alt='' src='/images/icons_transparent/Delete_Transparent16x16.png' class='deleteComponentCharacteristic' title='Delete Imaging Observation Characteristic'/>
+		<br />
+		<a href="#" class="collapseAllComponentCharacteristics"><!-- <img alt='' src='/images/Expanded8x8.png' class='expandCollapseImg'/>&nbsp; --><span>Expand/Collapse All</span></a>
+	</div>
+	<div>
+		<table class='notablesorter characteristicsTable' >
+		<thead>
+			<tr>
+			    <th style='width:20px'></th>
+				<th>
+					<table class='notablesorter'  style='border-spacing:0; width:100px'><thead><tr>
+						 <th style='width:150px'>Label</th> <th style='width:200px'>Description</th> <th style='width:40px'>Min</th> <th style='width:40px'>Max</th> <th style='width:75px'>Display</th> <th style='width:90px'>Confidence</th> <th style='width:100px'>Authors</th>
+					</tr></thead></table>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<%= render :partial => '/imaging_observation_characteristics/imaging_observation_characteristic', :collection => imaging_observation.imaging_observation_characteristics unless imaging_observation.blank? || imaging_observation.imaging_observation_characteristics.blank? %>
+		</tbody>
+		</table>
+	</div>
+</div>

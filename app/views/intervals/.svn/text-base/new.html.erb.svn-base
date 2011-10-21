@@ -1,0 +1,31 @@
+<h1>New interval</h1>
+
+<% form_for(@interval) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :ucumString %><br />
+    <%= f.text_field :ucumString %>
+  </p>
+  <p>
+    <%= f.label :maxValue %><br />
+    <%= f.text_field :maxValue %>
+  </p>
+  <p>
+    <%= f.label :minValue %><br />
+    <%= f.text_field :minValue %>
+  </p>
+  <p>
+    <%= f.label :operator %><br />
+    <%= f.text_field :operator %>
+  </p>
+  <p>
+    <%= f.label :characteristic_quantification_id %><br />
+    <%= f.text_field :characteristic_quantification_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', intervals_path %>

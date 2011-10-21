@@ -1,0 +1,23 @@
+<p>
+  <b>Ucumstring:</b>
+  <%=h @numerical.ucumString %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @numerical.value %>
+</p>
+
+<p>
+  <b>Operator:</b>
+  <%=h @numerical.operator %>
+</p>
+
+<p>
+  <b>Characteristic quantification:</b>
+  <%=h @numerical.characteristic_quantification_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_numerical_path(@numerical) %> |
+<%= link_to 'Back', numericals_path %>

@@ -1,0 +1,28 @@
+<h1>Editing allowed_term</h1>
+
+<% form_for(@allowed_term) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :codeMeaning %><br />
+    <%= f.text_field :codeMeaning %>
+  </p>
+  <p>
+    <%= f.label :codeValue %><br />
+    <%= f.text_field :codeValue %>
+  </p>
+  <p>
+    <%= f.label :codingSchemeDesignator %><br />
+    <%= f.text_field :codingSchemeDesignator %>
+  </p>
+  <p>
+    <%= f.label :imaging_observation_characteristic_id %><br />
+    <%= f.text_field :imaging_observation_characteristic_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @allowed_term %> |
+<%= link_to 'Back', allowed_terms_path %>

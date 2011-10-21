@@ -1,0 +1,38 @@
+<input type="text" style="width:100%; font-size:small" value="Search terms"/><br />
+<!--<button type="submit" style="float:right; width:80px; height:25px;"><span class="radio_options_text">Search</span></button>-->
+<a href="#" style="float:right" id="searchTermsLocal" ><img src="/images/icons_transparent/Search_Transparent24x24.png" alt="Search"/></a>
+
+<form>
+  <select name="collection_list" size="5" multiple="multiple" style="font-size:small; width:100%" >
+    <option>Radlex</option>
+    <option>NCI</option>
+    <option>SNOMED CT</option>
+    <option>ICD-9 CM</option>
+  </select>
+</form>
+
+<table class="tablesorter" id="myTable1">
+  <thead>
+    <tr>
+      <th>Term(code meaning)</th>
+      <th>Code</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Term-1</td>
+      <td>RIDxxx</td>
+      <td>RadLex</td>
+    </tr>
+    <tr>
+      <td>Term-2-1-1</td>
+      <td>RIDxxx</td>
+      <td>RadLex</td>
+    </tr>
+  </tbody>
+</table>
+
+<button id="addSelectedTerm" style="font-size:small;">Add</button>
+
+

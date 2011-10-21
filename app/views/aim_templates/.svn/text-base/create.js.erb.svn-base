@@ -1,0 +1,6 @@
+$("#create_template")[0].reset(); // the #create_template form is made by /templates/_form.html.erb
+$("#templateList").html("<%= escape_javascript(render :file => '/main/template_list.html.erb') %>") ;
+$("#availableTemplatesTableBody").html("<%= escape_javascript(render :partial => '/aim_templates/available_templates/', :collection => current_user.aim_templates) %>");
+//$("#templateGroupTableDiv").html("<%= escape_javascript(render :file => '/main/template_group_table.html.erb') %>") ;
+//alert('aim template create');
+

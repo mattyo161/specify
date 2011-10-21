@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores
+END
+_template_store.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores/_template_store.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores/index.html.erb
+END
+template_stores.erb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores/template_stores.erb
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores/create.js.erb
+END
+_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores/_form.erb
+END
+new.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores/new.js.erb
+END
+_template_store.erb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/template_stores/_template_store.erb
+END

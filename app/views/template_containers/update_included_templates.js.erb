@@ -1,0 +1,6 @@
+//alert('<%= escape_javascript(render :text => @params.to_s);%>');
+//$("#create_template_container")[0].reset(); // the #create_template form is made by /templates/_form.html.erb
+//$("#templateContainerList").html("<%= escape_javascript(render :file => '/main/template_group_list.html.erb') %>") ;
+$("#availableTemplatesTableBody").html("<%= escape_javascript(render :partial => '/aim_templates/available_templates/', :collection => current_user.aim_templates) %>");
+$("#templateGroupTableDiv").html("<%= escape_javascript(render :file => '/main/template_group_table.html.erb') %>") ;
+//alert('updateincluded templates good2');

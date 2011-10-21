@@ -1,0 +1,22 @@
+<h1>Listing quantiles</h1>
+
+<table>
+  <tr>
+    <th>Bin</th>
+    <th>Characteristic quantification</th>
+  </tr>
+
+<% @quantiles.each do |quantile| %>
+  <tr>
+    <td><%=h quantile.bin %></td>
+    <td><%=h quantile.characteristic_quantification_id %></td>
+    <td><%= link_to 'Show', quantile %></td>
+    <td><%= link_to 'Edit', edit_quantile_path(quantile) %></td>
+    <td><%= link_to 'Destroy', quantile, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New quantile', new_quantile_path %>

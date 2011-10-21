@@ -1,0 +1,16 @@
+<br/>
+<table class="notablesorter">
+<thead>
+<tr><th>Description</th><th>MathML</th><th>Algorithm Name</th><th>Algorithm Version</th></tr>
+</thead>
+<% unless calculation.blank? %>
+<tbody>
+<tr class="calculations" id="calculation<%= calculation.id.to_s %>" name="element" style="height:20px">
+    <td class='editableText description'><%= calculation.description %></td>
+    <td class='editableText mathML'><%= calculation.mathML %></td>
+    <td class='editableText algorithmName'><%= calculation.algorithmName %></td>
+    <td class='editableText algorithmVersion'><%= calculation.algorithmVersion %></td>
+</tr>
+</tbody>
+<% end %>
+</table>

@@ -1,0 +1,28 @@
+<p>
+  <b>Codemeaning:</b>
+  <%=h @lexicon_term.codeMeaning %>
+</p>
+
+<p>
+  <b>Codevalue:</b>
+  <%=h @lexicon_term.codeValue %>
+</p>
+
+<p>
+  <b>Codingschemedesignator:</b>
+  <%=h @lexicon_term.codingSchemeDesignator %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @lexicon_term.description %>
+</p>
+
+<p>
+  <b>Lexicon term:</b>
+  <%=h @lexicon_term.lexicon_term_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_lexicon_term_path(@lexicon_term) %> |
+<%= link_to 'Back', lexicon_terms_path %>

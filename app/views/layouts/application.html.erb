@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <title>Specify:<%= controller.controller_name %>:<%= controller.action_name %></title>
+  <% # stylesheet_link_tag 'application' 
+   %>
+  <%= stylesheet_link_tag 'Newer_theme/jquery.ui.all' %>
+  <%= stylesheet_link_tag 'blue_css_theme/style' %>
+  <%= stylesheet_link_tag 'jquery-ui' %>
+  <%= stylesheet_link_tag 'main_page' %>
+  <% # javascript_include_tag :defaults 
+  %>
+<% if protect_against_forgery? %>
+  <script type='text/javascript'>
+      //<![CDATA[
+        window._auth_token_name = "#{request_forgery_protection_token}";
+        window._auth_token = "#{form_authenticity_token}";
+    //]]>
+    </script>
+<% end %>  
+<%= javascript_include_tag ['jquery', 'application'] %> 
+<%= javascript_include_tag ["Newer_theme/jquery-latest", "Newer_theme/jquery-ui-latest", "Newer_theme/jquery.layout-1.3.0.rc28k", "Newer_theme/debug", "Newer_theme/themeswitchertool", "jquery.tablesorter.min", "jquery.blockUI", 'main_page'] %>
+    <%= stylesheet_link_tag 'overrides' %>
+</head>
+<body class="custom">
+	test
+<!-- <p style="color: green"><%= flash[:notice] %></p> -->
+<div id="outer-north" style="background-color:#121D26; left:0px; right:0px" >
+	<div id="account_login">
+        <% if !current_user %>
+		  <span style="white-space:nowrap">
+		  <%= link_to "Request an account", new_account_path %> |
+			<%= link_to "Log in", new_user_session_path %>
+			</span>
+		<% else %>
+		  <span style="white-space:nowrap">
+			<%= link_to "Home", '/' %> | 
+			<%#  link_to "My Account", account_path 
+			%>
+			<%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
+			</span>
+		<% end %>
+	</div>
+    <%= render :file => '/layouts/header.html.erb' %>
+    <div id="page-loading">Loading...</div>
+    <div id="outer-south">
+		<div class="logos"><%= render :file => '/main/logos.html.erb' %></div>
+	</div>
+    <div id="outer-center" class="hidden"></div>
+    <%= yield  %>
+    </div><!-- /#outer-center -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5154563-38']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script> 
+  </body>
+</html>

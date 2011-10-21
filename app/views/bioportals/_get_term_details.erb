@@ -1,0 +1,35 @@
+<h2><%= @term.label %></h2>
+<dl>
+<!-- 
+<dt>Parents:</dt>
+<dd>
+	<% @term.get_parents.each do |parent| %>
+			<% @terms = [parent.light] 
+			   @subid = "parent-#{parent.id}" %>
+			<%= render :partial => "get_terms" %>
+	<% end %>
+</dd>
+-->
+<%= render :partial => "definition", :locals => {:my_title => "Definition", :my_value => @term.definition } %>
+<% if @term.get_properties.size > 0 %>
+<dt class="properties">Properties:</dt>
+<dd class="properties">
+	<ul class="properties">
+	<% @term.get_properties.each do |property| %>
+		<li class="property">
+			<%= property.label %> -> 
+			<ul class="property">
+			<% @terms = [property.range.light] 
+			   @subid = "#{property.id}-#{property.range.id}"
+			   @domain_id = @term.id
+			   @property_id = property.id %>
+			<%= render :partial => "get_terms" %>
+			</ul>
+		</li>
+	<% end %>
+	</ul>
+</dd>
+<% end %>
+<%= render :partial => "definition", :locals => {:my_title => "XML URL", :my_value => link_to(@term.xml_url, @term.xml_url, :target => "_blank") } %>
+
+</dl>

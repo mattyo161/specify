@@ -1,0 +1,237 @@
+# This file is auto-generated from the current state of the database. Instead of editing this file, 
+# please use the migrations feature of Active Record to incrementally modify your database, and
+# then regenerate this schema definition.
+#
+# Note that this schema.rb definition is the authoritative source for your database schema. If you need
+# to create the application database on another system, you should be using db:schema:load, not running
+# all the migrations from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended to check this file into your version control system.
+
+ActiveRecord::Schema.define(:version => 20101124022001) do
+
+  create_table "aim_templates", :force => true do |t|
+    t.string   "name"
+    t.string   "version"
+    t.text     "description"
+    t.string   "uid"
+    t.string   "codeValue"
+    t.string   "codeMeaning"
+    t.string   "codingSchemeDesignator"
+    t.string   "codingSchemeVersion"
+    t.string   "authors"
+    t.datetime "creationDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  create_table "aim_templates_template_containers", :id => false, :force => true do |t|
+    t.integer  "aim_template_id"
+    t.integer  "template_container_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "allowed_terms", :force => true do |t|
+    t.string   "codeMeaning"
+    t.string   "codeValue"
+    t.string   "codingSchemeDesignator"
+    t.integer  "imaging_observation_characteristic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "anatomic_entity_characteristic_id"
+    t.integer  "component_id"
+    t.string   "codingSchemeVersion"
+  end
+
+  create_table "anatomic_entities", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "component_id"
+    t.boolean  "annotatorConfidence"
+  end
+
+  create_table "anatomic_entity_characteristics", :force => true do |t|
+    t.string   "label"
+    t.integer  "minCardinality"
+    t.integer  "maxCardinality"
+    t.integer  "itemNumber"
+    t.boolean  "shouldDisplay"
+    t.text     "explanatoryText"
+    t.string   "authors"
+    t.boolean  "annotatorConfidence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "anatomic_entity_id"
+  end
+
+  create_table "calculations", :force => true do |t|
+    t.string   "uid"
+    t.string   "description"
+    t.string   "mathML"
+    t.string   "algorithmName"
+    t.string   "algorithmVersion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "component_id"
+  end
+
+  create_table "characteristic_quantifications", :force => true do |t|
+    t.string   "name"
+    t.string   "type"
+    t.integer  "allowed_term_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "quantification_type"
+    t.boolean  "annotatorConfidence"
+  end
+
+  create_table "components", :force => true do |t|
+    t.string   "label"
+    t.integer  "minCardinality"
+    t.integer  "maxCardinality"
+    t.integer  "itemNumber"
+    t.boolean  "shouldDisplay"
+    t.string   "explanatoryText"
+    t.string   "authors"
+    t.integer  "aim_template_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "component_type"
+  end
+
+  create_table "imaging_observation_characteristics", :force => true do |t|
+    t.string   "label"
+    t.integer  "minCardinality"
+    t.integer  "maxCardinality"
+    t.integer  "itemNumber"
+    t.boolean  "shouldDisplay"
+    t.text     "explanatoryText"
+    t.string   "authors"
+    t.boolean  "annotatorConfidence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "imaging_observation_id"
+  end
+
+  create_table "imaging_observations", :force => true do |t|
+    t.boolean  "annotatorConfidence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "component_id"
+  end
+
+  create_table "inferences", :force => true do |t|
+    t.boolean  "annotatorConfidence"
+    t.integer  "component_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "intervals", :force => true do |t|
+    t.string   "ucumString"
+    t.float    "maxValue"
+    t.float    "minValue"
+    t.integer  "characteristic_quantification_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "minOperator"
+    t.string   "maxOperator"
+  end
+
+  create_table "lexicon_terms", :force => true do |t|
+    t.string   "codeMeaning"
+    t.string   "codeValue"
+    t.string   "codingSchemeDesignator"
+    t.text     "description"
+    t.integer  "lexicon_term_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "codingSchemeVersion"
+    t.string   "lexiconName"
+  end
+
+  create_table "non_quantifiables", :force => true do |t|
+    t.string   "codeMeaning"
+    t.string   "codeValue"
+    t.string   "codingSchemeDesignator"
+    t.string   "codingSchemeVersion"
+    t.integer  "characteristic_quantification_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "allowed_term_id"
+  end
+
+  create_table "numericals", :force => true do |t|
+    t.string   "ucumString"
+    t.float    "value"
+    t.string   "operator"
+    t.integer  "characteristic_quantification_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ordinal_levels", :force => true do |t|
+    t.integer  "integerValue"
+    t.string   "description"
+    t.integer  "scale_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "quantiles", :force => true do |t|
+    t.integer  "bins"
+    t.integer  "characteristic_quantification_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "scales", :force => true do |t|
+    t.string   "comment"
+    t.string   "description"
+    t.string   "value"
+    t.integer  "characteristic_quantification_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "template_containers", :force => true do |t|
+    t.string   "name"
+    t.string   "version"
+    t.text     "description"
+    t.string   "authors"
+    t.datetime "creationDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  create_table "template_stores", :force => true do |t|
+    t.integer  "user_id"
+    t.text     "templatetext"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "template_container_id"
+  end
+
+  create_table "users", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "login"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+    t.integer  "login_count"
+    t.datetime "last_request_at"
+    t.datetime "last_login_at"
+    t.datetime "current_login_at"
+    t.string   "current_login_ip"
+    t.string   "last_login_ip"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+  end
+
+end

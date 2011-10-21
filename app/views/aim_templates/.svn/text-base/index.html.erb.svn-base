@@ -1,0 +1,38 @@
+<h1>Listing aim templates</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Version</th>
+    <th>Description</th>
+    <th>Uid</th>
+    <th>Codevalue</th>
+    <th>Codemeaning</th>
+    <th>Codingschemedesignator</th>
+    <th>Codingschemeversion</th>
+    <th>Authors</th>
+    <th>Creationdate</th>
+  </tr>
+
+<% @templates.each do |aim_template| %>
+  <tr>
+    <td><%=h aim_template.name %></td>
+    <td><%=h aim_template.version %></td>
+    <td><%=h aim_template.description %></td>
+    <td><%=h aim_template.uid %></td>
+    <td><%=h aim_template.codeValue %></td>
+    <td><%=h aim_template.codeMeaning %></td>
+    <td><%=h aim_template.codingSchemeDesignator %></td>
+    <td><%=h aim_template.codingSchemeVersion %></td>
+    <td><%=h aim_template.authors %></td>
+    <td><%=h aim_template.creationDate %></td>
+    <td><%= link_to 'Show', aim_template %></td>
+    <td><%= link_to 'Edit', edit_aim_template_path(aim_template) %></td>
+    <td><%= link_to 'Destroy', aim_template, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New aim template', new_aim_template_path %>

@@ -1,0 +1,2 @@
+$(".newAnatomicEntityCharacteristic").html("<%= escape_javascript(render :partial => 'form', :collection => [@anatomic_entity_characteristic]) %>") ;
+ajaxLinks();

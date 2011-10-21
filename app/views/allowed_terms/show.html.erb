@@ -1,0 +1,23 @@
+<p>
+  <b>Codemeaning:</b>
+  <%=h @allowed_term.codeMeaning %>
+</p>
+
+<p>
+  <b>Codevalue:</b>
+  <%=h @allowed_term.codeValue %>
+</p>
+
+<p>
+  <b>Codingschemedesignator:</b>
+  <%=h @allowed_term.codingSchemeDesignator %>
+</p>
+
+<p>
+  <b>Imaging observation characteristic:</b>
+  <%=h @allowed_term.imaging_observation_characteristic_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_allowed_term_path(@allowed_term) %> |
+<%= link_to 'Back', allowed_terms_path %>

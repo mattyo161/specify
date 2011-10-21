@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entities
+END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entities/create.js.erb
+END
+anatomic_entities.erb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entities/anatomic_entities.erb
+END
+_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entities/_form.erb
+END
+new.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entities/new.js.erb
+END
+_anatomic_entity.erb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/AIMES/!svn/ver/393/Trunk/aim_template_manager-1.0.0/app/views/anatomic_entities/_anatomic_entity.erb
+END

@@ -1,0 +1,14 @@
+<b><span class="form_headers">
+<%= reset_form.label :login %><br />
+<%= reset_form.text_field :login %><br />
+<br/>
+<%= reset_form.label :password, reset_form.object.new_record? ? nil : "Change password" %><br />
+<%= reset_form.password_field :password %><br />
+<br />
+<%= reset_form.label :password_confirmation %><br />
+<%= reset_form.password_field :password_confirmation %><br />
+<br />
+E-mail<br />
+<input type="text" id="email" /><br />
+<br />
+</span></b>
